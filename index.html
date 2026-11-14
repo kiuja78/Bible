@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#122e3d" />
+<meta name="description" content="창세기 50장, 사도행전 28장 총 468문제. 오답 시 한 번 더 도전하는 성경 퀴즈. 모바일과 PC 모두 지원." />
+<title>말씀 퀴즈 은행 V3 · 음성지원 | 창세기 · 사도행전</title>
+<style>
+:root{--ink:#183244;--sub:#687e89;--edge:#dae6e9;--blue:#207f85;--teal:#08767f;--light:#eaf5f4;--navy:#122e3d;--white:#fff;--gold:#d9ae69;--shadow:0 24px 68px rgba(23,59,67,.07)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f4f8f8;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;-webkit-font-smoothing:antialiased}button,input{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible{outline:3px solid #54b7b4;outline-offset:3px}.hidden{display:none!important}.shell{max-width:1170px;margin:0 auto;padding:0 26px}.app-header{height:96px;display:flex;align-items:center;justify-content:space-between}.logo{padding:0;border:0;background:none;display:flex;align-items:center;gap:13px;text-align:left;color:var(--ink)}.logo-mark{width:44px;height:44px;border-radius:13px;background:var(--navy);color:#eac784;display:grid;place-items:center;font-size:25px}.logo-words{display:flex;flex-direction:column;gap:2px}.logo-words b{font-size:20px;letter-spacing:-.8px}.logo-words small{font-size:10px;letter-spacing:2.3px;color:#7b929a;font-weight:800}.header-chip{background:white;padding:10px 14px;border-radius:24px;border:1px solid #e3eded;color:#668089;font-size:12px;white-space:nowrap}.online-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#51ad8f;margin-right:5px}.hero{min-height:356px;overflow:hidden;background:linear-gradient(115deg,#133746,#153c4d 65%,#315c62);color:white;border-radius:25px;display:flex;position:relative;box-shadow:0 20px 52px rgba(17,59,71,.1)}.hero-copy{padding:54px 61px 56px;position:relative;z-index:1;width:68%}.eyebrow{color:#b3dcd7;font-size:12px;font-weight:700;letter-spacing:1px;margin:0 0 14px}.hero h1{font-size:38px;line-height:1.35;letter-spacing:-1.9px;margin:0;font-weight:760}.hero h1 em{font-style:normal;color:#eed19a}.hero-desc{color:#bfd1d6;font-size:14px;line-height:1.8;max-width:460px;margin:16px 0 24px}.hero-actions{display:flex;gap:11px;flex-wrap:wrap}.btn{border:0;border-radius:11px;display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:46px;padding:12px 19px;font-size:13px;font-weight:750;transition:transform .15s,background .15s}.btn:hover,.chapter-card:hover{transform:translateY(-2px)}.btn.primary{color:#13333b;background:#e8c68d}.btn.primary:hover{background:#f6d9aa}.btn.ghost{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.25);color:#fff}.btn.outline{border:1px solid #bed4d7;background:white;color:#285a64}.btn.subtle{background:#e9f1f2;color:#30616b}.hero-visual{position:absolute;width:320px;height:320px;right:20px;top:18px;display:flex;justify-content:center;align-items:center}.halo{position:absolute;border:1px solid rgba(255,255,255,.16);width:315px;height:315px;border-radius:50%}.halo:after{content:"";position:absolute;inset:28px;border:1px dashed rgba(255,255,255,.14);border-radius:50%}.book-cover{position:relative;width:174px;height:225px;border:1px solid #c4a16b;border-left:13px solid #d5b077;border-radius:8px 13px 12px 9px;transform:rotate(-11deg);background:linear-gradient(110deg,#bd9859,#e7cfa3 10%,#3e665d 12%,#30594e 78%,#1c4d4a);box-shadow:20px 25px 26px rgba(0,0,0,.2),inset 0 0 0 6px rgba(233,202,137,.15);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#e6ce9d;text-align:center}.book-cover>span{font-family:Georgia,serif;font-size:20px;letter-spacing:3px;line-height:1.55}.book-line{width:64px;height:1px;background:#dac391;margin:20px 0}.book-cross{font-size:29px}.spark{position:absolute;color:#eac788}.spark-a{top:60px;right:34px;font-size:40px}.spark-b{bottom:28px;left:24px;font-size:26px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0 46px}.stat{background:white;border:1px solid #e2eaed;border-radius:16px;padding:21px 22px 18px;min-height:129px;display:flex;flex-direction:column;align-items:flex-start;box-shadow:0 5px 19px rgba(14,50,64,.025)}.stat-label{font-size:12px;font-weight:700;color:#8097a1}.stat strong{font-size:29px;letter-spacing:-1.3px;line-height:1.65}.stat strong small{font-size:14px;font-weight:650;margin-left:4px;color:#546f7b}.stat-detail,.stat-link{font-size:11px;color:#90a2a9}.stat-link{border:0;background:none;color:#26858b;text-decoration:underline;padding:0;font-weight:700}.chapters-panel{background:#fff;border:1px solid #e1eaed;padding:32px;border-radius:24px;box-shadow:var(--shadow)}.panel-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:27px}.section-kicker{font-size:10px;font-weight:800;letter-spacing:2px;color:#398b8f;margin:0 0 10px}.panel-heading h2,.how-panel h2{font-size:24px;letter-spacing:-1.1px;margin:0 0 7px}.section-desc{font-size:12px;color:#8da0a6;margin:0}.shuffle-link{background:none;border:0;color:#1b7b83;font-weight:700;font-size:12px;padding:9px 0;white-space:nowrap}.shuffle-link span{margin-left:4px}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px}.book-tabs{display:flex;gap:7px;padding:5px;background:#f0f5f5;border-radius:12px}.book-tab{background:transparent;border:0;border-radius:9px;min-height:42px;padding:0 19px;color:#8499a0;font-size:13px;font-weight:750}.book-tab.active{background:white;color:#176d77;box-shadow:0 3px 9px rgba(29,72,82,.07)}.book-tab small{margin-left:6px;font-size:10px;color:inherit;opacity:.7}.search{display:flex;align-items:center;border:1px solid #dde9e9;background:#fbfdfd;border-radius:10px;height:45px;width:236px;padding:0 13px;gap:8px}.search span{font-size:26px;color:#88a1a8;line-height:1}.search input{width:100%;border:0;outline:0;background:transparent;font-size:12px;color:var(--ink)}.book-note{display:flex;align-items:center;gap:10px;background:#edf7f5;color:#477c7b;padding:12px 17px;border-radius:10px;font-size:12px;font-weight:650;margin-bottom:20px}.book-note>span:first-child{color:#24868a}.chapter-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.chapter-card{text-align:left;background:#fff;border:1px solid #e0e9eb;border-radius:11px;padding:16px 14px 14px;min-height:112px;transition:.15s;display:flex;flex-direction:column;gap:8px;color:var(--ink);position:relative}.chapter-card:hover{border-color:#7ab9b9;box-shadow:0 8px 24px rgba(24,101,112,.09)}.chapter-card .chapter-num{font-size:11px;color:#6f8e99;font-weight:700}.chapter-card .chapter-topic{font-size:13px;line-height:1.3;font-weight:740;letter-spacing:-.4px;word-break:keep-all}.chapter-card .chapter-meta{font-size:10px;color:#9aabb1;margin-top:auto}.chapter-card.complete{border-color:#b1dbd4;background:#f6fbfa}.complete-pill{position:absolute;right:10px;top:12px;background:#e2f3ee;border-radius:5px;padding:3px 5px;color:#147766;font-size:9px;font-weight:700}.empty-state{grid-column:1/-1;text-align:center;padding:40px;color:var(--sub)}.muted{color:#98a9af;font-size:11px;line-height:1.8}.note-bottom{margin:19px 0 0}.how-panel{margin:46px 0;padding:0 6px}.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}.how-grid>div{background:#fff;border:1px solid #e2eaed;border-radius:15px;padding:23px 22px;display:flex;flex-direction:column}.how-icon{width:43px;height:43px;display:grid;place-items:center;border-radius:12px;font-size:13px;font-weight:800;margin-bottom:17px}.how-one{background:#e8f2fa;color:#3d83b2}.how-two{background:#f9efdd;color:#c58b3c}.how-three{background:#e4f3ed;color:#3d907c}.how-grid b{font-size:14px}.how-grid p{font-size:12px;color:#8499a2;line-height:1.7;margin:7px 0 0}.app-footer{display:flex;justify-content:space-between;gap:30px;padding:20px 0 28px;color:#99aab1;font-size:11px;border-top:1px solid #e0eaeb;line-height:1.6}.app-footer span:last-child{text-align:right}.quiz-nav{margin:21px auto 18px;display:flex;align-items:center;justify-content:space-between;max-width:790px}.back-button{background:transparent;border:0;color:#5c7c85;font-size:13px;font-weight:700;padding:10px}.quiz-mode{font-size:13px;font-weight:800}.question-fraction{font-size:12px;font-weight:700;color:#849aa2}.progress-track{max-width:790px;margin:0 auto 25px;height:7px;background:#deeaeb;border-radius:99px;overflow:hidden}.progress-bar{height:100%;width:0%;transition:width .25s;background:linear-gradient(90deg,#228f91,#6ab6a5);border-radius:99px}.quiz-card{max-width:790px;margin:auto;background:#fff;border-radius:22px;border:1px solid #e0eaed;padding:45px 50px 27px;box-shadow:var(--shadow)}.question-top{display:flex;align-items:center;justify-content:space-between}.question-tag{padding:8px 11px;border-radius:7px;background:#eaf6f3;color:#227b7d;font-size:11px;font-weight:780}.question-counter{font-size:11px;color:#9baeb5;font-weight:800;letter-spacing:1.4px}.quiz-card h2{font-size:25px;line-height:1.55;letter-spacing:-.8px;word-break:keep-all;margin:29px 0 9px}.question-hint{font-size:12px;color:#8aa0a8;margin:0 0 27px}.options{display:grid;gap:11px}.option{width:100%;border:1px solid #dfe9eb;background:#fff;min-height:61px;padding:12px 16px;display:flex;align-items:center;gap:14px;text-align:left;border-radius:12px;color:var(--ink);font-size:15px;line-height:1.5;transition:background .16s,border .16s}.option:not(:disabled):hover{background:#f3faf9;border-color:#8fc7c3}.option:disabled{cursor:default}.option-index{border:1px solid #dfebed;border-radius:7px;min-width:30px;height:30px;display:grid;place-items:center;font-size:12px;font-weight:760;color:#8ca2aa}.option-text{flex:1}.option-icon{font-size:18px;font-weight:900;margin-left:auto}.option.wrong{background:#fff5ef;border-color:#e4ae86;color:#ad6236}.option.wrong .option-index{background:#f7dfce;color:#a65e35;border-color:transparent}.option.correct{background:#eaf8f0;border:1.5px solid #55ad88;color:#207457}.option.correct .option-index{background:#50a57e;color:white;border-color:transparent}.option.inactive{opacity:.63}.feedback{margin-top:20px;border-radius:11px;padding:16px 19px;font-size:13px;line-height:1.7}.feedback.good{background:#e9f8f0;color:#216f56;border:1px solid #c7e7d5}.feedback.retry{background:#fff7e9;color:#996522;border:1px solid #f0debe}.feedback.reveal{background:#eef4f9;color:#3e657d;border:1px solid #d4e4ec}.feedback b{display:block;margin-bottom:3px}.feedback small{display:block;font-size:11px;opacity:.75;margin-top:3px}.question-footer{display:flex;justify-content:space-between;align-items:center;margin-top:25px;min-height:47px}.remaining-label{color:#849da4;font-size:12px}.next-button{min-width:142px}.score-strip{max-width:790px;margin:22px auto 65px;display:flex;justify-content:space-between;gap:15px;color:#8da1a8;font-size:12px}.score-strip b{color:#218185}.result-card{max-width:650px;margin:52px auto 80px;text-align:center;background:#fff;border:1px solid #dfeaec;padding:45px 40px;border-radius:24px;box-shadow:var(--shadow)}.result-symbol{margin:0 auto 18px;display:grid;place-items:center;width:62px;height:62px;border-radius:20px;background:#e5f4ed;color:#31887c;font-size:34px}.result-card h2{margin:0 0 8px;font-size:29px;letter-spacing:-1px}.result-card>p:not(.section-kicker){font-size:13px;color:#7b949c}.result-total{margin:30px auto 25px;display:flex;align-items:baseline;justify-content:center;gap:7px}.result-total strong{font-size:76px;line-height:1;color:#1e8184;letter-spacing:-4px}.result-total span{color:#87a0a7;font-size:15px}.result-breakdown{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid #e0eaec;border-radius:14px;overflow:hidden;margin:25px 0}.result-breakdown>div{padding:18px 8px;display:flex;flex-direction:column;gap:6px}.result-breakdown>div:not(:last-child){border-right:1px solid #e0eaec}.result-breakdown b{font-size:24px}.result-breakdown small{font-size:11px;color:#8499a1}.result-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:9px;margin-top:25px}.result-actions .btn{gap:9px}
+@media(max-width:950px){.hero-copy{width:72%;padding-left:43px}.hero-visual{right:-60px;opacity:.8}.chapter-grid{grid-template-columns:repeat(4,1fr)}.app-footer{flex-direction:column;gap:4px}.app-footer span:last-child{text-align:left}}
+@media(max-width:650px){.shell{padding:0 14px}.app-header{height:72px}.logo-mark{width:37px;height:37px;font-size:21px;border-radius:10px}.logo-words b{font-size:16px}.logo-words small{font-size:8px}.header-chip{font-size:10px;padding:8px 10px}.hero{min-height:auto;border-radius:18px}.hero-copy{width:100%;padding:33px 23px 32px}.hero h1{font-size:27px;line-height:1.35;letter-spacing:-1.1px}.hero-desc{font-size:12px;max-width:310px;line-height:1.8}.hero-visual{transform:scale(.55);opacity:.20;right:-116px;top:22px}.hero-actions{gap:8px}.hero .btn{padding:10px 12px;font-size:11px;min-height:43px;gap:6px}.stats{grid-template-columns:repeat(2,1fr);gap:9px;margin:14px 0 25px}.stat{padding:15px 16px;min-height:113px;border-radius:12px}.stat strong{font-size:24px}.stat-label{font-size:11px}.stat-detail,.stat-link{font-size:10px}.chapters-panel{padding:20px 15px;border-radius:18px}.panel-heading{align-items:flex-start;flex-direction:column;gap:8px;margin-bottom:19px}.panel-heading h2,.how-panel h2{font-size:20px}.shuffle-link{padding:4px 0 7px;font-size:11px}.toolbar{align-items:stretch}.book-tabs{width:100%}.book-tab{flex:1;padding:0 8px;font-size:12px}.search{width:100%;height:42px}.book-note{font-size:11px;line-height:1.5}.chapter-grid{grid-template-columns:repeat(2,1fr);gap:8px}.chapter-card{min-height:100px;padding:13px}.chapter-card .chapter-topic{font-size:12px}.how-panel{margin:31px 0}.how-grid{grid-template-columns:1fr;gap:9px}.how-grid>div{flex-direction:row;align-items:center;gap:12px;padding:14px}.how-grid b{font-size:12px}.how-grid p{font-size:11px;margin:5px 0 0}.how-icon{flex-shrink:0;margin-bottom:0;width:42px}.app-footer{padding:16px 4px 25px;font-size:10px}.quiz-nav{margin:15px 0 16px}.back-button{padding:8px 0;font-size:12px}.quiz-mode{font-size:12px}.quiz-card{border-radius:16px;padding:24px 18px 20px}.quiz-card h2{font-size:21px;line-height:1.5;margin:24px 0 12px}.question-hint{font-size:11px;margin-bottom:20px}.option{font-size:13px;min-height:59px;padding:10px 11px;gap:9px}.option-index{min-width:27px;height:27px}.question-counter{font-size:10px}.score-strip{font-size:10px;line-height:1.6;flex-wrap:wrap;margin-bottom:40px}.question-footer{margin-top:19px}.remaining-label{font-size:11px}.next-button{min-width:auto}.result-card{margin:28px auto 50px;padding:28px 15px;border-radius:17px}.result-card h2{font-size:23px}.result-total strong{font-size:62px}.result-breakdown b{font-size:20px}.result-breakdown small{font-size:10px}.result-actions{display:grid;gap:9px}.result-actions .btn{width:100%}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+
+/* v2 UI: more readable mobile-first surfaces, no external resources */
+:root{--ink:#183143;--navy:#102b3b;--sub:#5b7580;--edge:#dce7eb;--shadow:0 18px 40px rgba(16,48,66,.075)}
+body{background:#f1f6f7;overflow-x:hidden;line-height:1.5}
+.app-header{height:88px}.logo-words b{letter-spacing:-.65px}
+.hero{background:radial-gradient(ellipse at 90% 10%,rgba(51,140,141,.50),transparent 42%),linear-gradient(130deg,#102938,#174454 80%,#1e5f62);box-shadow:0 16px 38px rgba(11,51,63,.13)}
+.hero h1{font-weight:830}.hero h1 em{color:#f8d48e}
+.stat{box-shadow:0 3px 12px rgba(13,60,73,.025)}
+.stat strong,.result-total strong{font-variant-numeric:tabular-nums}
+.chapters-panel{border:1px solid #e0eaed;box-shadow:0 14px 42px rgba(35,77,91,.04)}
+.chapter-card{min-height:125px;border-radius:14px;gap:9px}.chapter-card .chapter-num{font-size:11px}.chapter-card .chapter-topic{font-size:14px}.chapter-card .chapter-meta{font-size:11px}.chapter-card:active,.option:active{transform:scale(.992)}
+.option{min-height:70px;border-radius:14px;line-height:1.55}.option:focus-visible{outline:3px solid #49b8b7;outline-offset:2px}
+.feedback{font-size:14px}.feedback b{font-size:15px}.question-hint{font-size:13px}
+.boot-warning{position:relative;z-index:9999;margin:12px auto;padding:18px 20px;max-width:900px;background:#fff6e7;border:1px solid #f3d7a0;color:#754816;border-radius:16px;box-shadow:0 12px 26px rgba(91,54,9,.12);font-size:15px;line-height:1.65}
+.boot-warning b{display:block;font-size:17px;margin-bottom:3px}.boot-warning small{display:block;margin-top:7px;font-size:13px;opacity:.82}
+@media(max-width:650px){
+  .shell{padding:0 16px}.app-header{height:76px;gap:8px}.logo{gap:9px}.logo-mark{flex-shrink:0;box-shadow:0 5px 15px rgba(16,43,59,.11)}.logo-words b{font-size:16px}.logo-words small{font-size:9px;letter-spacing:1.4px}
+  .header-chip{font-size:10px;padding:7px 9px}
+  .hero{border-radius:21px;min-height:auto}.hero-copy{padding:35px 24px 36px;z-index:2}
+  .eyebrow{font-size:12px;letter-spacing:0;margin-bottom:13px}.hero h1{font-size:clamp(26px,7vw,33px);line-height:1.4;letter-spacing:-1.3px}
+  .hero-desc{font-size:13px;line-height:1.8;max-width:310px;margin:15px 0 21px}
+  .hero-visual{opacity:.18;transform:scale(.61);right:-137px;top:28px}
+  .hero-actions{flex-wrap:wrap;gap:10px}.hero .btn{font-size:12px;min-height:46px;padding:12px 13px;flex:1 1 128px}
+  .stats{gap:10px;margin:15px 0 26px}.stat{min-height:124px;padding:17px 16px;border-radius:15px}
+  .stat strong{font-size:28px}.stat strong small{font-size:13px}.stat-label{font-size:12px}.stat-detail{font-size:11px}.stat-link{font-size:11px;line-height:1.4}
+  .chapters-panel{padding:24px 17px;border-radius:19px}.panel-heading h2,.how-panel h2{font-size:22px;line-height:1.45;margin-top:5px}.section-desc{font-size:12px;line-height:1.65}.section-kicker{letter-spacing:1.5px}
+  .shuffle-link{font-size:12px;padding:7px 0 9px}
+  .book-tab{font-size:14px;height:44px}.book-tab small{font-size:11px}.book-note{font-size:12px;line-height:1.6}
+  .chapter-grid{gap:10px}.chapter-card{min-height:128px;padding:14px 12px}.chapter-card .chapter-topic{font-size:14px;line-height:1.45}.chapter-card .chapter-num{font-size:10px}.chapter-card .chapter-meta{font-size:11px}
+  .complete-pill{font-size:9px}.note-bottom{font-size:11px}
+  .how-grid>div{padding:15px;gap:12px}.how-grid b{font-size:13px}.how-grid p{font-size:12px;line-height:1.6}
+  .quiz-nav{margin:17px 0 16px;gap:8px}.back-button{font-size:13px;white-space:nowrap}.quiz-mode{font-size:12px;text-align:center}.question-fraction{font-size:12px;white-space:nowrap}
+  .progress-track{height:8px;margin-bottom:18px}.quiz-card{border-radius:20px;padding:26px 20px 22px}
+  .quiz-card h2{font-size:22px;line-height:1.5;letter-spacing:-.55px;margin:26px 0 12px}
+  .question-hint{font-size:12px;margin-bottom:22px}.option{font-size:15px;min-height:68px;padding:12px 12px;gap:12px}
+  .option-index{min-width:32px;height:32px;font-size:13px;border-radius:9px}.option-icon{font-size:20px}
+  .feedback{padding:16px;border-radius:13px;font-size:13px;line-height:1.75}.feedback b{font-size:15px}.feedback small{font-size:12px;line-height:1.55}
+  .question-footer{align-items:center;gap:10px}.remaining-label{font-size:12px}.next-button{font-size:13px;min-height:45px}
+  .score-strip{font-size:12px;margin-top:19px;gap:6px}
+  .result-card{padding:30px 19px 26px;border-radius:20px}.result-card h2{font-size:24px}.result-breakdown small{font-size:11px}
+}
+@media(max-width:350px){.shell{padding:0 11px}.hero-copy{padding:28px 17px}.hero h1{font-size:24px}.hero .btn{flex:1 1 115px;font-size:11px}.stat{padding:15px 12px}.chapters-panel{padding:18px 12px}.chapter-card{padding:12px 10px}.chapter-card .chapter-topic{font-size:13px}.quiz-card{padding:22px 14px}.option{font-size:14px}}
+
+
+/* V3: built-in Korean speech controls, iPhone/PC */
+.voice-panel{margin:18px 0 23px;border:1px solid #d5e8e6;background:linear-gradient(135deg,#eff9f7,#f9fbff);border-radius:15px;padding:15px 17px}
+.voice-panel-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:13px;flex-wrap:wrap}
+.voice-heading{display:flex;align-items:center;gap:7px;color:#155968;font-size:13px;font-weight:800}
+.voice-heading .voice-dot{width:9px;height:9px;background:#228d90;display:inline-block;border-radius:50%;box-shadow:0 0 0 4px #daf1ed}
+.voice-switch{display:flex;gap:8px;align-items:center;color:#366c73;font-size:12px;font-weight:750;cursor:pointer;user-select:none}
+.voice-switch input{accent-color:#157d84;width:19px;height:19px;margin:0;flex:none}
+.voice-actions{display:flex;gap:8px;flex-wrap:wrap}
+.voice-btn{appearance:none;border:1px solid #c6dedf;background:#fff;border-radius:9px;color:#215865;min-height:41px;padding:9px 12px;font-size:12px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.voice-btn:active{transform:translateY(1px)}.voice-btn-main{background:#187681;border-color:#187681;color:#fff}
+.voice-btn:disabled{opacity:.45;cursor:not-allowed}
+.voice-status{font-size:11px;color:#658a90;line-height:1.6;margin-top:10px;min-height:17px}
+.voice-status.speaking{font-weight:750;color:#176877}
+@media(max-width:620px){.voice-panel{padding:13px 12px;margin:15px 0 19px}.voice-panel-head{align-items:center}.voice-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px}.voice-btn{padding:10px 8px;min-height:44px;font-size:12px}.voice-btn:last-child{grid-column:1/-1}.voice-switch{font-size:12px}.voice-panel-head{gap:12px}}
+
+</style>
+</head>
+<body>
+<noscript><div class="boot-warning"><b>이 화면에서는 퀴즈를 실행할 수 없어요.</b>자바스크립트 실행이 차단된 미리보기입니다. 웹 브라우저에서 열어 주세요.</div></noscript>
+<div id="bootWarning" class="boot-warning"><b>퀴즈가 아직 실행되지 않았어요.</b>아이폰의 파일 미리보기에서는 프로그램이 실행되지 않을 수 있습니다. 이 파일을 웹사이트(GitHub Pages 등)에 올려 Safari에서 여는 방법을 권장합니다.<small>PC에서는 압축을 풀어 index.html을 Chrome/Edge 등으로 실행할 수 있습니다.</small></div>
+<div class="shell">
+  <header class="app-header">
+    <button type="button" class="logo" id="goHome" aria-label="첫 화면으로 돌아가기">
+      <span class="logo-mark" aria-hidden="true">✦</span>
+      <span class="logo-words"><b>말씀 퀴즈 은행</b><small>GENESIS &amp; ACTS</small></span>
+    </button>
+    <span class="header-chip"><span class="online-dot"></span> 오프라인 학습 가능</span>
+  </header>
+
+  <main>
+    <section id="homeScreen" class="page">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">매일 한 장, 말씀을 더 가까이</p>
+          <h1>읽고, 생각하고,<br><em>다시 기억하는</em> 성경 공부</h1>
+          <p class="hero-desc">창세기와 사도행전의 모든 장을 4지선다 퀴즈로 만나보세요. 문제와 보기까지 음성으로 듣고 풀 수 있어요. 틀려도 한 번 더 기회가 있어요.</p>
+          <div class="hero-actions">
+            <button class="btn primary" id="startFirst">첫 장부터 시작 <span aria-hidden="true">→</span></button>
+            <button class="btn ghost" id="startRandom">전체 랜덤 20문제 <span aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true"><div class="halo"></div><div class="book-cover"><span>HOLY<br>BIBLE</span><div class="book-line"></div><div class="book-cross">✝</div></div><div class="spark spark-a">✦</div><div class="spark spark-b">✧</div></div>
+      </div>
+      <section class="stats" aria-label="학습 현황">
+        <div class="stat"><span class="stat-label">전체 문제</span><strong>468<small>문제</small></strong><span class="stat-detail">두 권 전체 수록</span></div>
+        <div class="stat"><span class="stat-label">전체 장</span><strong>78<small>장</small></strong><span class="stat-detail">창세기 50 · 사도행전 28</span></div>
+        <div class="stat"><span class="stat-label">완료한 장</span><strong id="doneCount">0<small>장</small></strong><span class="stat-detail" id="doneDetail">이제 시작해 보세요</span></div>
+        <div class="stat"><span class="stat-label">복습할 문제</span><strong id="reviewCount">0<small>문제</small></strong><button class="stat-link" id="startReview">틀린 문제 다시 풀기 →</button></div>
+      </section>
+      <section class="chapters-panel" id="chapters">
+        <div class="panel-heading"><div><p class="section-kicker">CHAPTER LIBRARY</p><h2>원하는 장을 선택하세요</h2><p class="section-desc">각 장마다 6문제 · 4개 보기 · 오답 시 재도전 1회</p></div><button class="shuffle-link" id="bookRandom">선택한 책 랜덤 20문제 <span>↗</span></button></div>
+        <div class="toolbar"><div class="book-tabs" role="tablist" aria-label="성경 책 선택"><button type="button" class="book-tab active" data-book="창세기" role="tab" aria-selected="true">창세기 <small>50장</small></button><button type="button" class="book-tab" data-book="사도행전" role="tab" aria-selected="false">사도행전 <small>28장</small></button></div><label class="search"><span aria-hidden="true">⌕</span><input id="chapterSearch" type="search" placeholder="장 번호 또는 주제 검색" aria-label="장 검색"></label></div>
+        <div class="book-note"><span id="bookNoteIcon">✦</span><span id="bookNote">창조와 타락, 믿음의 조상들, 요셉 이야기까지</span></div>
+        <div class="chapter-grid" id="chapterGrid"></div>
+        <p class="muted note-bottom">완료 기록과 틀린 문제는 이 기기의 브라우저에 저장됩니다. 다른 기기에는 자동으로 연동되지 않습니다.</p>
+      </section>
+      <section class="how-panel"><div class="section-kicker">HOW IT WORKS</div><h2>두 번의 기회로 익히는 말씀</h2><div class="how-grid"><div><span class="how-icon how-one">01</span><b>답을 골라 보세요</b><p>문제 하나에 네 개의 선택지가 나옵니다.</p></div><div><span class="how-icon how-two">02</span><b>틀리면 한 번 더</b><p>첫 오답에는 정답을 가리지 않고 다시 도전합니다.</p></div><div><span class="how-icon how-three">03</span><b>다시 틀리면 정답 확인</b><p>두 번째도 틀리면 정답과 근거 장절을 보여줍니다.</p></div></div></section>
+    </section>
+
+    <section id="quizScreen" class="page hidden" aria-label="성경 문제 풀기">
+      <div class="quiz-nav"><button class="back-button" id="quitQuiz">← 장 선택</button><div class="quiz-mode" id="quizModeLabel">창세기 1장</div><span class="question-fraction" id="questionFraction">1 / 6</span></div>
+      <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+      <div class="quiz-card"><div class="question-top"><span class="question-tag" id="questionTag">창세기 1장</span><span class="question-counter" id="questionCounter">QUESTION 01</span></div><h2 id="questionTitle"></h2><p class="question-hint">가장 알맞은 답 하나를 선택해 주세요.</p>
+      <div class="voice-panel" aria-label="성경 문제 음성 읽기">
+        <div class="voice-panel-head">
+          <span class="voice-heading"><span class="voice-dot" aria-hidden="true"></span> 🔊 한국어 음성 읽기</span>
+          <label class="voice-switch"><input type="checkbox" id="autoRead" checked />다음 문제 자동 읽기</label>
+        </div>
+        <div class="voice-actions">
+          <button type="button" class="voice-btn" id="listenQuestion" aria-label="현재 문제만 음성으로 듣기">🔉 문제 듣기</button>
+          <button type="button" class="voice-btn voice-btn-main" id="listenAll" aria-label="현재 문제와 네 가지 보기 모두 음성으로 듣기">▶ 문제와 보기 듣기</button>
+          <button type="button" class="voice-btn" id="stopListening" aria-label="음성 읽기 중지">■ 음성 중지</button>
+        </div>
+        <div class="voice-status" id="voiceStatus" role="status" aria-live="polite">재생 버튼을 누르면 문제를 읽어드려요.</div>
+      </div>
+      <div id="options" class="options" role="group" aria-label="답 선택"></div><div id="feedback" class="feedback hidden" role="status" aria-live="polite"></div><div class="question-footer"><span class="remaining-label" id="attemptLabel">남은 기회 2회</span><button class="btn primary next-button hidden" id="nextQuestion">다음 문제 →</button></div></div>
+      <div class="score-strip"><span>지금까지 <b id="currentRight">0</b>문제 정답</span><span>다시 도전 중이라면 천천히 생각해 보세요 <span aria-hidden="true">☘</span></span></div>
+    </section>
+
+    <section id="resultScreen" class="page hidden" aria-label="퀴즈 결과">
+      <div class="result-card"><div class="result-symbol">✦</div><p class="section-kicker">SESSION COMPLETE</p><h2 id="resultHeading">학습을 마쳤어요!</h2><p id="resultSubtitle">말씀과 한 걸음 더 가까워졌어요.</p><div class="result-total"><strong id="resultScore">0</strong><span id="resultMax">/ 6문제 정답</span></div><div class="result-breakdown"><div><b id="firstTryCount">0</b><small>첫 선택 정답</small></div><div><b id="secondTryCount">0</b><small>재도전 정답</small></div><div><b id="wrongCount">0</b><small>정답 확인</small></div></div><div class="result-actions"><button class="btn primary" id="nextChapter">다음 장으로 →</button><button class="btn outline" id="repeatQuiz">같은 문제 다시 풀기</button><button class="btn subtle" id="backToChapters">다른 장 선택</button></div></div>
+    </section>
+  </main>
+  <footer class="app-footer"><span>말씀 퀴즈 은행 · 창세기 &amp; 사도행전</span><span>문제는 성경 장별 사건을 바탕으로 직접 구성했습니다. 본문 번역에 따라 고유명사 표기에 차이가 있을 수 있습니다.</span></footer>
+</div>
+<script>
+/* 창세기·사도행전 장별 독창적 객관식 질문 468문제. 온라인 로딩 없이 실행됩니다. */
+const QUIZ_BANK = {"창세기":{"1":[["하나님이 첫째 날 창조하신 것은 무엇인가요?","빛","바다","사람","해와 달","1:3-5"],["하나님이 둘째 날 만드신 것은 무엇인가요?","궁창","식물","동물","별","1:6-8"],["땅과 바다가 구분되고 식물이 나온 날은 언제인가요?","셋째 날","첫째 날","넷째 날","여섯째 날","1:9-13"],["해와 달과 별들이 만들어진 날은 언제인가요?","넷째 날","둘째 날","셋째 날","다섯째 날","1:14-19"],["물고기와 새를 창조하신 날은 언제인가요?","다섯째 날","첫째 날","넷째 날","여섯째 날","1:20-23"],["하나님이 사람을 창조하신 모습은 무엇을 따른 것인가요?","하나님의 형상","천사의 형상","동물의 형상","별의 형상","1:26-27"]],"2":[["하나님은 창조를 마치시고 몇째 날에 안식하셨나요?","일곱째 날","셋째 날","다섯째 날","여섯째 날","2:2-3"],["하나님이 사람을 지으실 때 사용하신 것은 무엇인가요?","땅의 흙","바닷물","나뭇잎","돌가루","2:7"],["하나님이 처음 사람을 두신 동산의 이름은 무엇인가요?","에덴","겟세마네","갈멜","시온","2:8"],["아담에게 먹지 말라고 명하신 나무는 무엇인가요?","선악을 알게 하는 나무","생명나무","감람나무","무화과나무","2:16-17"],["하나님이 아담의 배필을 만드실 때 사용하신 것은 무엇인가요?","아담의 갈빗대","아담의 손","아담의 발","아담의 머리카락","2:21-22"],["창세기 2장에서 남자와 여자는 무엇을 이루라고 하나요?","한 몸","한 나라","한 성읍","한 군대","2:24"]],"3":[["여자에게 선악과를 먹도록 유혹한 것은 무엇인가요?","뱀","사자","독수리","양","3:1-6"],["선악과를 먹은 후 두 사람이 처음으로 깨달은 것은 무엇인가요?","자신들이 벌거벗었다는 사실","하늘의 별 개수","동물들의 이름","미래의 날짜","3:7"],["아담과 하와가 몸을 가리기 위해 엮은 잎은 무엇인가요?","무화과나무 잎","감람나무 잎","종려나무 잎","포도나무 잎","3:7"],["아담은 자신의 잘못을 묻는 하나님께 누구를 언급했나요?","하나님이 주신 여자","뱀을 만든 장인","아벨","노아","3:12"],["하나님이 아담과 하와에게 지어 입히신 옷은 무엇인가요?","가죽옷","세마포 옷","왕의 옷","양털 망토","3:21"],["에덴동산 생명나무의 길을 지키도록 두신 존재는 누구인가요?","그룹들과 불 칼","열두 지파","제사장들","목자들","3:24"]],"4":[["가인이 바친 제물은 무엇에서 얻은 것이었나요?","땅의 소산","양의 첫 새끼","물고기","비둘기","4:3"],["아벨이 드린 것은 무엇이었나요?","양의 첫 새끼와 기름","포도주만","밀가루만","향료만","4:4"],["가인이 죽인 사람은 누구인가요?","아벨","셋","에녹","라멕","4:8"],["하나님이 가인에게 동생에 대해 물으셨을 때 가인이 한 말의 요지는 무엇인가요?","내가 동생을 지키는 자입니까?","그가 집에 있습니다","함께 제사드렸습니다","제가 구했습니다","4:9"],["가인이 거주한 에덴 동쪽의 땅 이름은 무엇인가요?","놋 땅","고센 땅","모압 땅","갈릴리","4:16"],["아담과 하와가 아벨 대신 얻은 아들의 이름은 무엇인가요?","셋","에녹","에노스","야벳","4:25"]],"5":[["아담은 몇 세까지 살았나요?","930세","777세","969세","120세","5:5"],["하나님과 동행하다가 하나님이 데려가신 인물은 누구인가요?","에녹","므두셀라","가인","라멕","5:21-24"],["므두셀라는 몇 세까지 살았나요?","969세","930세","365세","950세","5:27"],["노아의 아버지 이름은 무엇인가요?","라멕","셋","가인","에녹","5:28-29"],["노아의 세 아들에 속하지 않는 사람은 누구인가요?","이삭","셈","함","야벳","5:32"],["셋이 낳은 아들로 계보에 기록된 사람은 누구인가요?","에노스","에녹","라멕","노아","5:6"]],"6":[["하나님 앞에서 은혜를 입은 사람은 누구인가요?","노아","가인","니므롯","에서","6:8"],["노아가 하나님께 지으라는 명령을 받은 것은 무엇인가요?","방주","성전","궁전","망대","6:14"],["방주에 사용하라고 명하신 나무는 무엇인가요?","고페르 나무","백향목","싯딤나무","무화과나무","6:14"],["방주의 길이는 몇 규빗이었나요?","300규빗","100규빗","30규빗","500규빗","6:15"],["방주를 몇 층으로 만들라고 하셨나요?","3층","1층","2층","7층","6:16"],["당시 땅에 가득 찬 것으로 묘사된 것은 무엇인가요?","포악함","평화","풍년","찬양","6:11-13"]],"7":[["방주에 들어갈 때 노아는 몇 세였나요?","600세","120세","500세","950세","7:6"],["비가 땅에 내린 기간은 며칠이었나요?","40일 40밤","7일 7밤","12일 12밤","150일 150밤","7:12"],["노아의 아내와 아들들의 아내까지 방주에 들어간 사람은 총 몇 명인가요?","8명","6명","10명","12명","7:7,13"],["방주 문을 닫으신 분은 누구인가요?","여호와","노아의 아들","천사 미가엘","셈","7:16"],["물이 땅에 넘친 기간은 몇 일이었나요?","150일","30일","40일","365일","7:24"],["노아는 정결한 짐승을 암수 몇 쌍씩 데려가라고 명령받았나요?","7쌍","1쌍","2쌍","3쌍","7:2"]],"8":[["물이 줄어들자 방주가 머문 산은 어디인가요?","아라랏 산","시내 산","갈멜 산","감람 산","8:4"],["노아가 처음 보내어 땅이 마른 것을 살핀 새는 무엇인가요?","까마귀","비둘기","참새","독수리","8:7"],["비둘기가 돌아오며 물고 온 잎은 무엇이었나요?","감람나무 새 잎","무화과 잎","종려나무 잎","포도나무 잎","8:11"],["노아가 방주에서 나와 가장 먼저 한 일 중 하나는 무엇인가요?","제단을 쌓고 번제를 드림","성을 쌓음","왕관을 만듦","군대를 조직함","8:20"],["하나님이 땅이 있는 동안 그치지 않으리라 하신 짝에 해당하지 않는 것은 무엇인가요?","왕과 신하","심음과 거둠","추위와 더위","낮과 밤","8:22"],["노아가 보낸 비둘기가 다시 돌아오지 않은 때는 몇 번째 놓아보냈을 때인가요?","세 번째","첫 번째","두 번째","다섯 번째","8:8-12"]],"9":[["하나님이 노아와 맺으신 언약의 표징은 무엇인가요?","무지개","돌기둥","금송아지","불기둥","9:12-17"],["노아 가족에게 하나님이 반복해 주신 명령은 무엇인가요?","생육하고 번성하라","성벽을 쌓아라","바다를 건너라","왕을 세워라","9:1,7"],["하나님이 먹지 말라고 하신 것은 무엇이 섞인 고기인가요?","피","소금","기름","물","9:4"],["홍수 후 노아가 농사를 시작하며 심은 것은 무엇인가요?","포도나무","밀","올리브","보리","9:20"],["술에 취한 노아의 벌거벗음을 보고 형제들에게 알린 아들은 누구인가요?","함","셈","야벳","에노스","9:22"],["노아가 홍수 후 더 산 햇수는 얼마인가요?","350년","100년","500년","150년","9:28"]],"10":[["창세기 10장은 주로 무엇을 기록하나요?","노아의 자손과 민족의 계보","십계명","성막 건축","예수님의 비유","10:1-32"],["창세기 10장에 기록된 셈의 아들 중 하나는 누구인가요?","엘람","요셉","에서","르우벤","10:22"],["니므롯은 어떤 사람으로 유명했나요?","세상의 첫 용사","첫 제사장","첫 선지자","첫 왕비","10:8"],["니므롯의 나라 시작에 속하는 도시는 무엇인가요?","바벨","예루살렘","나사렛","베들레헴","10:10"],["가나안은 누구의 아들이었나요?","함","셈","야벳","노아","10:6"],["에벨의 아들 중 하나로 땅이 나뉜 때와 관련된 이름은 무엇인가요?","벨렉","에서","단","야곱","10:25"]],"11":[["바벨탑 사건 전 온 땅의 언어는 어떠했나요?","하나였음","열두 가지였음","백 가지였음","사라졌음","11:1"],["사람들이 쌓으려 했던 것은 무엇인가요?","성읍과 탑","방주","성전","제단","11:4"],["하나님이 바벨에서 사람들에게 하신 일은 무엇인가요?","언어를 혼잡하게 하심","모두 같은 언어를 가르치심","바다를 가르심","해를 멈추심","11:7-9"],["사람들이 바벨탑을 쌓으려고 사용한 재료는 무엇인가요?","벽돌과 역청","대리석과 금","나무와 가죽","구리와 은","11:3"],["아브람의 아버지 이름은 누구인가요?","데라","나홀","하란","셈","11:26-27"],["데라가 가족을 데리고 떠난 출발지는 어디인가요?","갈대아 우르","애굽","고센","여리고","11:31"]],"12":[["아브람이 본토와 친척과 아버지의 집을 떠나도록 부름받은 분은 누구인가요?","여호와","바로","롯","멜기세덱","12:1"],["아브람이 하란을 떠날 때 나이는 몇 세였나요?","75세","25세","100세","40세","12:4"],["아브람과 함께 가나안으로 떠난 조카는 누구인가요?","롯","나홀","이스마엘","라반","12:5"],["아브람이 기근을 피해 내려간 나라는 어디인가요?","애굽","바벨론","앗수르","모압","12:10"],["아브람은 애굽에서 사래를 어떤 관계라고 말했나요?","누이","딸","종","어머니","12:13"],["하나님은 아브람을 통해 땅의 무엇이 복을 얻으리라 약속하셨나요?","모든 족속","왕들만","제사장만","장자들만","12:3"]],"13":[["아브람과 롯이 갈라진 주된 배경은 무엇인가요?","가축과 소유가 많아 함께 살기 어려워짐","왕위를 두고 싸움","언어가 달라짐","전쟁에서 패함","13:5-7"],["롯이 선택한 방향은 어느 쪽인가요?","동쪽 요단 지역","서쪽 바다","북쪽 광야","남쪽 시내 산","13:10-11"],["롯이 장막을 옮겨 가까이 간 성읍은 어디인가요?","소돔","헤브론","벧엘","애굽","13:12"],["롯이 떠난 뒤 하나님이 아브람에게 보여 주신 것은 무엇인가요?","동서남북의 땅","새로운 왕관","하늘의 병거","금으로 된 문","13:14-17"],["아브람이 거주하며 제단을 쌓은 곳은 어디인가요?","헤브론 마므레 상수리 수풀","예루살렘 성전","갈릴리 호수","여리고 성벽","13:18"],["아브람은 롯과의 갈등을 피하려고 무엇을 제안했나요?","먼저 땅을 고르도록 양보함","롯을 포로로 잡음","제비를 뽑아 왕을 정함","모든 재산을 버림","13:8-9"]],"14":[["아브람이 적에게 사로잡힌 누구를 구출하러 갔나요?","롯","이삭","야곱","요셉","14:12-16"],["살렘 왕이자 지극히 높으신 하나님의 제사장은 누구인가요?","멜기세덱","바로","아비멜렉","니므롯","14:18"],["멜기세덱이 아브람에게 가지고 나온 것은 무엇인가요?","떡과 포도주","금과 은","물과 기름","소금과 꿀","14:18"],["아브람이 전리품의 얼마를 멜기세덱에게 주었나요?","십분의 일","절반","전부","백분의 일","14:20"],["아브람이 롯을 구출할 때 데려간 집에서 훈련된 사람은 몇 명인가요?","318명","12명","70명","600명","14:14"],["아브람이 소돔 왕에게 자신을 부유하게 했다고 말할 기회를 주지 않으려고 거절한 것은 무엇인가요?","전리품의 소유","하나님의 축복","롯의 귀환","제사장의 축복","14:22-23"]],"15":[["아브람에게 하나님이 자신은 무엇이라고 하셨나요?","방패와 지극히 큰 상급","병거와 군대","왕관과 칼","문과 성벽","15:1"],["아브람은 처음에 누가 자신의 상속자가 될까 염려했나요?","다메섹 엘리에셀","롯의 아내","멜기세덱","바로","15:2-3"],["하나님이 아브람의 자손을 비교하신 하늘의 것은 무엇인가요?","별","구름","비","새","15:5"],["아브람이 하나님을 믿으니 하나님이 그 믿음을 무엇으로 여기셨나요?","의","장수","재물","힘","15:6"],["하나님이 아브람의 자손이 타국에서 괴롭힘을 받게 될 기간으로 말씀하신 것은 얼마인가요?","400년","40년","70년","120년","15:13"],["언약을 맺으실 때 등장한 것에 해당하는 것은 무엇인가요?","타는 횃불","금송아지","붉은 바다","돌판 두 개","15:17-18"]],"16":[["사래가 아브람에게 첩으로 준 여종은 누구인가요?","하갈","리브가","레아","드보라","16:1-3"],["하갈이 낳은 아들의 이름은 무엇인가요?","이스마엘","이삭","에서","요셉","16:11,15"],["하갈은 어떤 사람의 여종이었나요?","사래","리브가","라헬","미리암","16:1"],["하갈이 도망쳤을 때 여호와의 사자를 만난 곳은 어디인가요?","광야 샘물 곁","왕궁","성전 뜰","갈릴리 바다","16:7"],["하갈은 자신에게 말씀하신 하나님을 어떤 이름으로 불렀나요?","나를 살피시는 하나님","전쟁의 신","황금의 왕","물의 주인","16:13"],["이스마엘이 태어났을 때 아브람은 몇 세였나요?","86세","75세","99세","100세","16:16"]],"17":[["하나님이 아브람에게 주신 새 이름은 무엇인가요?","아브라함","이스라엘","이삭","요셉","17:5"],["사래의 새 이름은 무엇인가요?","사라","라헬","레아","드보라","17:15"],["하나님이 언약의 표징으로 명하신 예식은 무엇인가요?","할례","침례","안수","유월절 식사","17:10-11"],["남자아이는 태어난 지 며칠 만에 할례를 받아야 하나요?","8일","3일","7일","40일","17:12"],["아브라함과 사라에게 태어날 아들의 이름은 무엇인가요?","이삭","이스마엘","에서","베냐민","17:19"],["아브라함이 할례를 받을 당시 나이는 몇 세였나요?","99세","75세","86세","120세","17:24"]],"18":[["아브라함에게 나타난 방문자는 몇 사람이었나요?","세 사람","한 사람","두 사람","열두 사람","18:2"],["아브라함이 손님들에게 대접한 것 중 하나는 무엇인가요?","송아지 요리","메추라기","물고기 두 마리","무교병만","18:7-8"],["사라가 아들을 낳을 것이라는 말을 듣고 한 반응은 무엇인가요?","속으로 웃음","노래함","춤을 춤","도망감","18:12"],["하나님은 아브라함에게 사라가 언제 아들을 낳을 것이라 하셨나요?","내년 이맘때","그날 밤","10년 뒤","7일 뒤","18:10,14"],["아브라함이 소돔을 위해 마지막으로 요청한 의인의 수는 몇 명인가요?","10명","50명","40명","20명","18:32"],["아브라함이 소돔에 대해 간구하며 처음 언급한 의인의 수는 몇 명인가요?","50명","10명","5명","100명","18:24"]],"19":[["롯을 찾아 소돔에 들어온 방문자는 누구인가요?","두 천사","세 왕","열두 정탐꾼","네 제사장","19:1"],["천사들이 롯에게 떠나라고 한 성읍은 어디인가요?","소돔","헤브론","벧엘","하란","19:12-13"],["롯의 아내가 뒤를 돌아보자 무엇이 되었나요?","소금 기둥","돌 기둥","불기둥","나무","19:26"],["롯이 도망할 수 있도록 허락받은 작은 성읍은 어디인가요?","소알","여리고","가나","사마리아","19:20-22"],["소돔과 고모라에 내려진 것은 무엇인가요?","유황과 불","큰 우박만","메뚜기 떼","지진만","19:24"],["롯의 두 딸에게서 태어난 민족의 조상에 해당하는 이름은 무엇인가요?","모압","이스라엘","에돔","블레셋","19:37"]],"20":[["아브라함이 사라를 누이라고 말한 곳의 왕은 누구인가요?","아비멜렉","바로","헤롯","사울","20:2"],["하나님이 아비멜렉에게 경고하신 방식은 무엇인가요?","꿈","불기둥","천둥","편지","20:3"],["아비멜렉은 사라를 어떤 관계로 알고 데려갔나요?","아브라함의 누이","아브라함의 딸","아브라함의 종","롯의 아내","20:2-5"],["아브라함은 사라가 실제로 어떤 관계이기도 하다고 설명했나요?","이복누이","외손녀","사촌동생","며느리","20:12"],["아비멜렉은 아브라함에게 양과 소와 무엇을 주었나요?","종들","병거","금송아지","법궤","20:14"],["하나님이 아비멜렉 집안의 태를 닫으신 이유는 누구 때문이었나요?","사라","하갈","리브가","라헬","20:18"]],"21":[["아브라함과 사라 사이에서 태어난 아들은 누구인가요?","이삭","이스마엘","에서","야곱","21:1-3"],["이삭이 태어날 때 아브라함의 나이는 몇 세였나요?","100세","75세","86세","120세","21:5"],["아브라함이 이삭에게 할례를 행한 날은 태어난 지 며칠째인가요?","8일째","첫날","7일째","40일째","21:4"],["하갈이 광야에서 아들을 두고 울 때 하나님이 열어 보이신 것은 무엇인가요?","우물","동굴","성문","보물상자","21:19"],["아브라함이 아비멜렉과 언약을 맺은 장소는 어디인가요?","브엘세바","벧엘","시온","소돔","21:31-32"],["하갈의 아들이 장성하여 살게 된 광야는 어디인가요?","바란 광야","시내 광야","유다 광야","엔게디","21:21"]],"22":[["하나님이 아브라함에게 번제로 바치라고 명하신 아들은 누구인가요?","이삭","이스마엘","야곱","요셉","22:2"],["아브라함이 향한 산지는 어디인가요?","모리아 땅","아라랏 산","시내 산","감람 산","22:2"],["하나님이 이삭 대신 번제로 마련하신 것은 무엇인가요?","숫양","암소","비둘기","염소 새끼","22:13"],["이삭을 바치려는 아브라함을 멈춰 세운 이는 누구인가요?","여호와의 사자","롯","멜기세덱","라반","22:11-12"],["아브라함이 그곳에 붙인 이름의 뜻에 가까운 것은 무엇인가요?","여호와께서 준비하신다","하나님이 잊으셨다","왕이 승리한다","물을 찾았다","22:14"],["아브라함이 순종한 후 하나님은 그의 자손이 무엇처럼 많아지리라고 하셨나요?","하늘의 별과 바닷가 모래","강의 돌만큼","숲의 나무만큼","들판의 양만큼","22:17"]],"23":[["사라가 죽었을 때 나이는 몇 세였나요?","127세","100세","120세","175세","23:1"],["사라가 죽은 곳은 어디인가요?","기럇아르바 곧 헤브론","브엘세바","예루살렘","하란","23:2"],["아브라함이 사라를 장사하기 위해 산 굴은 무엇인가요?","막벨라 굴","아둘람 굴","엘리야 굴","마하나임 굴","23:9,19"],["막벨라 굴과 밭을 아브라함에게 판 사람은 누구인가요?","에브론","롯","엘리에셀","아비멜렉","23:8-16"],["아브라함이 밭값으로 지불한 은은 얼마인가요?","400세겔","30세겔","100세겔","1,000세겔","23:16"],["아브라함이 밭을 산 민족은 누구인가요?","헷 족속","애굽 사람","모압 사람","블레셋 사람","23:3-20"]],"24":[["아브라함이 아들의 아내를 찾기 위해 보낸 사람은 누구인가요?","집안의 늙은 종","롯","에서","바로","24:2-4"],["종이 우물가에서 신붓감을 알아보는 징표로 삼은 행동은 무엇인가요?","자신과 낙타에게 물을 주는 것","노래를 부르는 것","보물을 보여 주는 것","양을 치는 것","24:12-14"],["이삭의 아내가 된 여인은 누구인가요?","리브가","라헬","레아","하갈","24:67"],["리브가의 오빠는 누구인가요?","라반","나홀","에브론","엘리에셀","24:29"],["리브가가 아브라함의 종에게 물을 길어준 장소는 어디인가요?","우물","강 한복판","바닷가","궁전","24:15-20"],["이삭은 리브가를 어머니의 어떤 곳으로 들였나요?","사라의 장막","막벨라 굴","브엘세바 제단","왕궁","24:67"]],"25":[["아브라함이 죽었을 때 나이는 몇 세였나요?","175세","127세","180세","147세","25:7"],["이삭과 리브가에게 태어난 쌍둥이는 누구인가요?","에서와 야곱","가인과 아벨","베레스와 세라","므낫세와 에브라임","25:24-26"],["먼저 태어난 형은 누구인가요?","에서","야곱","요셉","베냐민","25:25"],["에서가 장자의 명분을 팔고 먹은 음식은 무엇인가요?","팥죽","떡과 물고기","메추라기","포도주","25:29-34"],["이삭이 리브가를 아내로 맞았을 때 몇 세였나요?","40세","20세","60세","100세","25:20"],["아브라함의 후처로 이름이 언급된 사람은 누구인가요?","그두라","하갈","레아","드보라","25:1"]],"26":[["이삭이 흉년 중에 거주한 블레셋 지역은 어디인가요?","그랄","예루살렘","하란","여리고","26:1,6"],["그랄에서 이삭이 리브가를 누구라고 말했나요?","누이","어머니","딸","종","26:7"],["이삭이 그 땅에서 농사하여 거둔 수확은 어느 정도였나요?","백 배","두 배","열 배","천 배","26:12"],["이삭의 종들이 파서 다툼이 생긴 첫 우물의 이름은 무엇인가요?","에섹","르호봇","브엘세바","시홀","26:20"],["다툼이 그친 후 이삭이 넓은 곳이라는 뜻으로 이름 붙인 우물은 무엇인가요?","르호봇","에섹","싯나","벧엘","26:22"],["이삭이 아비멜렉과 맹세를 맺은 장소는 어디인가요?","브엘세바","애굽","예루살렘","소돔","26:23-33"]],"27":[["나이 든 이삭이 처음 축복해 주려던 맏아들은 누구인가요?","에서","야곱","요셉","베냐민","27:1-4"],["야곱이 형 대신 축복받도록 돕던 어머니는 누구인가요?","리브가","사라","라헬","레아","27:5-17"],["야곱은 팔과 목에 무엇의 가죽을 둘렀나요?","염소 새끼","양","사자","소","27:16"],["이삭이 야곱의 목소리를 듣고 누구의 목소리 같다고 했나요?","야곱","에서","아브라함","라반","27:22"],["속임수를 알고 분노한 에서는 어떤 생각을 품었나요?","야곱을 죽이려 함","애굽으로 즉시 이주","왕에게 항복","집을 불태움","27:41"],["리브가는 야곱을 누구에게 피신시키려고 했나요?","외삼촌 라반","조카 롯","삼촌 이스마엘","제사장 멜기세덱","27:43"]],"28":[["이삭이 야곱에게 아내를 구하러 가라고 한 곳은 어디인가요?","밧단아람","애굽","소돔","여리고","28:2"],["야곱이 잠들어 꿈에서 본 것은 무엇인가요?","땅과 하늘에 닿은 사다리","홍수","불타는 떨기나무","큰 성전","28:12"],["야곱의 꿈에서 사다리를 오르내린 존재는 누구인가요?","하나님의 사자들","낙타들","왕들","제사장들","28:12"],["야곱이 잠에서 깬 뒤 그곳을 무엇이라 이름 붙였나요?","벧엘","하란","소돔","애굽","28:19"],["벧엘의 본래 이름은 무엇이었나요?","루스","세겜","브엘세바","실로","28:19"],["야곱은 하나님이 자신과 함께하시면 무엇을 드리겠다고 서원했나요?","십분의 일","절반","전부","첫아들","28:20-22"]],"29":[["야곱이 하란의 우물에서 처음 만난 라반의 딸은 누구인가요?","라헬","레아","디나","리브가","29:9-10"],["야곱은 라헬을 얻기 위해 처음 몇 년을 일했나요?","7년","3년","10년","14년","29:18-20"],["라반이 결혼식 밤에 라헬 대신 들여보낸 딸은 누구인가요?","레아","디나","리브가","하갈","29:23-25"],["라헬을 아내로 얻기 위해 야곱이 추가로 일하기로 한 기간은 얼마인가요?","7년","1년","3년","20년","29:27-30"],["레아가 낳은 첫아들은 누구인가요?","르우벤","시므온","레위","유다","29:32"],["레아의 넷째 아들의 이름은 무엇인가요?","유다","단","납달리","갓","29:35"]],"30":[["라헬이 야곱에게 자녀를 얻도록 준 여종은 누구인가요?","빌하","실바","하갈","드보라","30:3-4"],["레아가 야곱에게 준 자신의 여종은 누구인가요?","실바","빌하","하갈","미리암","30:9"],["르우벤이 들에서 가져온 것은 무엇인가요?","합환채","만나","포도주","금반지","30:14"],["하나님이 라헬을 기억하시고 낳게 하신 첫아들은 누구인가요?","요셉","베냐민","잇사갈","스불론","30:22-24"],["야곱이 품삯으로 받기로 한 양과 염소의 특징은 무엇인가요?","점과 얼룩이 있음","모두 흰색","모두 어린 암컷","뿔이 없음","30:32-33"],["야곱의 품삯 문제로 대립한 외삼촌은 누구인가요?","라반","에서","아비멜렉","엘리에셀","30:25-36"]],"31":[["야곱은 누구의 말을 듣고 고향으로 돌아가기로 했나요?","하나님","바로","에서","롯","31:3"],["라반의 집안 신상인 드라빔을 훔친 사람은 누구인가요?","라헬","레아","빌하","디나","31:19"],["라헬은 훔친 드라빔을 어디에 감추었나요?","낙타 안장 아래","우물 속","곡식 항아리","나무 위","31:34"],["라반이 야곱을 따라잡은 산지는 어디인가요?","길르앗 산","시내 산","아라랏 산","갈멜 산","31:23"],["하나님은 라반에게 어떤 방식으로 야곱을 해치지 말라고 경고하셨나요?","밤의 꿈","흰 비둘기","왕의 편지","번개만","31:24"],["야곱과 라반이 서로의 경계와 증거로 세운 것은 무엇인가요?","돌무더기","금송아지","방주","성벽","31:44-52"]],"32":[["야곱이 에서를 만나기 전에 보낸 것은 무엇인가요?","많은 가축을 선물로 보냄","군대를 보내 공격함","금송아지를 보냄","배를 보냄","32:13-21"],["야곱이 밤에 가족을 건너게 한 나루는 무엇인가요?","얍복 나루","요단 강 하구","홍해","기손 시내","32:22"],["야곱과 밤새 씨름한 이는 무엇으로 묘사되나요?","어떤 사람","사자","곰","왕","32:24"],["야곱은 씨름 중 몸의 어느 부분을 다쳤나요?","허벅지 관절","오른손","목","왼발 손가락","32:25"],["씨름 후 야곱에게 주어진 새 이름은 무엇인가요?","이스라엘","아브라함","에돔","요셉","32:28"],["야곱이 하나님과 대면했다는 뜻으로 붙인 지명은 무엇인가요?","브니엘","벧엘","여리고","실로","32:30"]],"33":[["야곱을 만나러 온 에서는 몇 명을 데리고 왔나요?","400명","40명","70명","1,000명","33:1"],["야곱이 에서를 만났을 때 땅에 엎드린 횟수는 몇 번인가요?","7번","3번","12번","2번","33:3"],["에서가 야곱을 다시 만났을 때 보인 행동은 무엇인가요?","달려와 껴안고 울었음","칼을 들고 공격함","돌을 던짐","모른 척 떠남","33:4"],["에서가 돌아간 지역은 어디인가요?","세일","하란","애굽","시온","33:16"],["야곱이 장막과 가축을 위한 우리를 만든 곳은 어디인가요?","숙곳","벧엘","브엘세바","아라랏","33:17"],["야곱이 세겜 근처에 쌓은 제단의 이름은 무엇인가요?","엘엘로헤이스라엘","여호와이레","에벤에셀","여호와닛시","33:20"]],"34":[["야곱의 딸로 세겜 사건의 중심이 된 사람은 누구인가요?","디나","레아","라헬","리브가","34:1"],["디나를 욕보인 사람의 이름은 무엇인가요?","세겜","하몰","라반","아비멜렉","34:2"],["세겜의 아버지는 누구인가요?","하몰","아비멜렉","에브론","기드온","34:2"],["야곱의 아들들이 혼인 동의 조건으로 요구한 예식은 무엇인가요?","할례","번제","침례","금식","34:13-17"],["세겜 성읍의 남자들을 공격한 디나의 오빠는 누구인가요?","시므온과 레위","르우벤과 유다","단과 납달리","요셉과 베냐민","34:25"],["공격이 일어난 때는 할례 후 며칠째였나요?","셋째 날","첫째 날","일곱째 날","열째 날","34:25"]],"35":[["하나님이 야곱에게 돌아가 거주하라고 명하신 곳은 어디인가요?","벧엘","애굽","소돔","세일","35:1"],["벧엘로 가기 전 야곱이 가족에게 버리라고 한 것은 무엇인가요?","이방 신상","양 떼","장막","곡식","35:2"],["야곱의 사랑하는 아내 중 베냐민을 낳다가 죽은 이는 누구인가요?","라헬","레아","빌하","실바","35:16-19"],["라헬이 죽기 전 낳은 아들에게 처음 붙인 이름은 무엇인가요?","베노니","르우벤","이스마엘","에브라임","35:18"],["이삭이 죽었을 때 나이는 몇 세였나요?","180세","120세","147세","175세","35:28"],["이삭을 장사한 두 아들은 누구인가요?","에서와 야곱","요셉과 유다","단과 갓","르우벤과 시므온","35:29"]],"36":[["창세기 36장은 주로 누구의 자손을 기록하나요?","에서","이삭","요셉","유다","36:1"],["에서의 또 다른 이름은 무엇인가요?","에돔","이스라엘","아브라함","가나안","36:1,8"],["에서가 정착한 산지는 어디인가요?","세일 산","시내 산","시온 산","아라랏 산","36:8"],["에서와 야곱이 갈라져 살게 된 이유로 제시된 것은 무엇인가요?","재산이 많아 함께 거주하기 어려웠음","서로 언어가 달랐음","왕의 명령이 있었음","가뭄으로 한 명만 남아야 했음","36:6-7"],["에서의 아들 중 한 명은 누구인가요?","엘리바스","르우벤","레위","에브라임","36:4"],["에서의 자손들이 다스린 지역의 이름은 무엇인가요?","에돔","유다","갈릴리","사마리아","36:9,31"]],"37":[["야곱이 다른 아들보다 더 사랑한 아들은 누구인가요?","요셉","유다","르우벤","단","37:3"],["야곱이 요셉에게 지어 입힌 옷은 무엇인가요?","채색옷","제사장 옷","왕의 갑옷","가죽옷","37:3"],["요셉의 첫 꿈에서 형들의 무엇이 요셉의 것에 절했나요?","곡식 단","별","나무","양","37:5-7"],["요셉의 두 번째 꿈에서 그에게 절하는 것으로 나온 것은 무엇인가요?","해와 달과 열한 별","일곱 소","열두 돌","비둘기 세 마리","37:9"],["요셉을 죽이지 말고 구덩이에 넣자고 제안한 형은 누구인가요?","르우벤","유다","시므온","레위","37:21-22"],["요셉은 얼마에 팔렸나요?","은 20개","은 30개","금 10개","은 50개","37:28"]],"38":[["유다의 맏아들 이름은 무엇인가요?","엘","오난","셀라","베레스","38:3"],["유다의 아들 중 형의 아내와 관계한 후 죽음을 맞은 둘째는 누구인가요?","오난","엘","셀라","세라","38:4-10"],["유다의 며느리 이름은 무엇인가요?","다말","라헬","리브가","디나","38:6"],["다말이 유다에게 담보로 요구한 물건 중 하나는 무엇인가요?","도장과 끈과 지팡이","금송아지","목걸이와 관","칼과 방패","38:17-18"],["유다는 다말이 자신보다 어떠하다고 인정했나요?","의롭다","힘이 세다","부유하다","나이가 많다","38:26"],["다말이 낳은 쌍둥이 이름은 무엇인가요?","베레스와 세라","에서와 야곱","가인과 아벨","므낫세와 에브라임","38:27-30"]],"39":[["애굽에서 요셉을 산 바로의 신하는 누구인가요?","보디발","아비멜렉","라반","시므온","39:1"],["보디발이 요셉에게 맡긴 일은 무엇인가요?","집안의 모든 재산 관리","군대 지휘","성전 제사","왕위 계승","39:4-6"],["요셉을 유혹한 사람은 누구인가요?","보디발의 아내","바로의 딸","사라","라헬","39:7"],["요셉이 유혹을 거절한 주된 이유는 무엇인가요?","하나님께 죄를 지을 수 없어서","애굽어를 몰라서","돈이 없어서","먼 길을 가야 해서","39:9"],["요셉의 옷을 증거로 거짓말한 사람은 누구인가요?","보디발의 아내","왕의 술 맡은 자","빵 굽는 자","그의 형 유다","39:12-18"],["옥에서도 요셉에게 일을 맡긴 사람은 누구인가요?","간수장","바로의 딸","라반","멜기세덱","39:21-23"]],"40":[["요셉과 함께 옥에 갇힌 두 관원은 누구인가요?","술 맡은 관원장과 떡 굽는 관원장","군대장과 서기관","제사장과 선지자","문지기와 어부","40:1-3"],["술 맡은 관원장이 꾼 꿈에 나온 포도나무의 가지는 몇 개였나요?","3개","2개","7개","12개","40:9-10"],["술 맡은 관원장의 꿈은 몇 일 뒤 복직을 뜻했나요?","3일","7일","40일","10일","40:12-13"],["떡 굽는 관원장의 꿈에서 머리 위 광주리는 몇 개였나요?","3개","1개","5개","7개","40:16"],["떡 굽는 관원장은 꿈의 해석대로 어떤 일을 당했나요?","죽임을 당함","복직함","왕이 됨","고향으로 귀환함","40:18-22"],["술 맡은 관원장은 풀려난 뒤 요셉을 어떻게 했나요?","잊어버림","즉시 구출함","왕의 사위로 삼음","동행하여 귀국함","40:23"]],"41":[["바로가 꿈에서 본 살진 암소의 수는 몇 마리인가요?","7마리","3마리","12마리","10마리","41:2"],["바로가 꿈에서 본 충실한 이삭의 수는 몇 개였나요?","7개","5개","10개","12개","41:5"],["요셉이 해석한 두 꿈은 몇 년의 풍년과 흉년을 뜻하나요?","7년 풍년과 7년 흉년","3년 풍년과 3년 흉년","40년 풍년과 40년 흉년","12년 풍년과 12년 흉년","41:26-30"],["바로가 요셉을 세운 지위는 무엇인가요?","애굽 온 땅의 통치자","성전 문지기","양치기","군대의 포로","41:40-43"],["요셉이 애굽에서 얻은 아내는 누구인가요?","아스낫","다말","리브가","하갈","41:45"],["요셉이 애굽에서 낳은 두 아들은 누구인가요?","므낫세와 에브라임","에서와 야곱","가인과 아벨","베레스와 세라","41:50-52"]],"42":[["요셉의 형들이 애굽에 간 이유는 무엇인가요?","곡식을 사기 위해","군대에 입대하려고","왕을 만나기 위해","결혼식을 위해","42:1-3"],["처음 애굽에 내려간 요셉의 형제들은 몇 명인가요?","10명","11명","12명","9명","42:3-4"],["야곱이 애굽에 보내지 않고 곁에 둔 막내는 누구인가요?","베냐민","요셉","유다","단","42:4"],["요셉은 형들을 알아보았나요?","알아보았음","전혀 알아보지 못했음","베냐민만 알아보았음","야곱만 알아보았음","42:7-8"],["요셉이 형제 중 한 사람을 가두어 두고 나머지를 돌려보냈을 때 남은 이는 누구인가요?","시므온","르우벤","유다","단","42:24"],["형들은 곡식 자루에서 무엇을 다시 발견했나요?","지불한 돈","왕의 보석","은잔","검은 돌","42:27,35"]],"43":[["두 번째 애굽 여행에 반드시 데려가야 했던 막내는 누구인가요?","베냐민","요셉","르우벤","갓","43:3-5"],["베냐민의 안전을 책임지겠다고 아버지에게 나선 형제는 누구인가요?","유다","단","레위","시므온","43:8-9"],["야곱이 애굽 총리에게 보내라고 한 선물에 들어간 것은 무엇인가요?","유향과 꿀","금송아지","향유 한 병만","무기","43:11"],["요셉이 형제들을 어디로 데리고 가라고 명했나요?","자신의 집","감옥","왕의 무덤","성전 뜰","43:16"],["요셉이 베냐민을 보고 한 행동은 무엇인가요?","감동하여 울 곳을 찾음","즉시 체포함","모른 척 도망감","형들을 내쫓음","43:29-30"],["식사 때 베냐민의 음식은 다른 형제보다 몇 배 많았나요?","5배","2배","7배","10배","43:34"]],"44":[["요셉이 종에게 막내의 자루에 넣도록 한 것은 무엇인가요?","은잔","금반지","도장","칼","44:2"],["은잔이 발견된 형제는 누구인가요?","베냐민","르우벤","시므온","유다","44:12"],["형들이 애굽을 떠난 뒤 따라가 수색한 사람은 누구인가요?","요셉의 집 청지기","바로","라반","보디발의 아내","44:4-12"],["요셉은 잔이 발견된 자를 어떻게 하겠다고 했나요?","자신의 종으로 삼겠다고 함","즉시 왕으로 삼겠다고 함","곧장 죽이겠다고 함","무조건 석방하겠다고 함","44:17"],["베냐민 대신 종이 되겠다고 간청한 형제는 누구인가요?","유다","요셉","단","잇사갈","44:18,33"],["유다가 막내를 돌려보내려는 중요한 이유는 무엇인가요?","아버지가 큰 슬픔을 겪지 않도록","베냐민이 왕이 되어서","형제들이 군인이 되어서","곡식이 필요 없어서","44:30-34"]],"45":[["요셉은 마침내 형들에게 자신의 신분을 어떻게 밝혔나요?","내가 요셉이라고 말함","편지를 남김","왕의 전령을 보냄","꿈속에서 나타남","45:3"],["요셉은 자신이 애굽에 온 일을 누구의 뜻과 연결해 설명했나요?","하나님의 계획","형들의 선행만","바로의 예언","라반의 명령","45:5-8"],["요셉이 가족들을 거주하게 하려는 애굽 지역은 어디인가요?","고센 땅","그랄","세일","아라랏","45:10"],["요셉이 베냐민에게 준 옷은 몇 벌인가요?","5벌","2벌","3벌","7벌","45:22"],["야곱이 요셉의 생존 소식을 들었을 때 처음 반응은 무엇인가요?","믿지 못하고 마음이 둔해짐","즉시 춤을 춤","화가 나서 떠남","군대를 모음","45:26"],["요셉이 가족을 데려오기 위해 보낸 교통수단은 무엇인가요?","수레","배","낙타만","전차","45:19,27"]],"46":[["야곱이 애굽으로 가는 길에 제사를 드린 곳은 어디인가요?","브엘세바","시온","여리고","소돔","46:1"],["하나님이 애굽으로 내려가길 두려워하지 말라고 하신 사람은 누구인가요?","야곱","에서","롯","아비멜렉","46:2-3"],["야곱의 가속으로 애굽에 내려간 사람의 수는 몇 명으로 기록되나요?","70명","12명","40명","120명","46:27"],["야곱이 고센으로 가는 길을 안내하게 하려고 먼저 보낸 아들은 누구인가요?","유다","르우벤","베냐민","단","46:28"],["요셉은 아버지를 만나기 위해 어디로 올라갔나요?","고센","세일","시온","하란","46:29"],["요셉이 가족에게 바로에게 직업을 어떻게 말하도록 했나요?","목축하는 사람들","군인들","금 세공인들","어부들","46:31-34"]],"47":[["바로는 야곱 가족에게 어느 땅에 거주하도록 허락했나요?","고센 땅","세일 땅","여리고","모리아 땅","47:5-6"],["야곱이 바로 앞에 섰을 때 나이는 몇 세였나요?","130세","100세","147세","175세","47:9"],["야곱이 애굽 땅에 머문 기간은 몇 년인가요?","17년","7년","20년","40년","47:28"],["야곱이 죽을 때 나이는 몇 세였나요?","147세","130세","175세","120세","47:28"],["애굽의 기근이 심해지면서 요셉은 백성을 위해 무엇을 했나요?","식량을 나누고 토지와 가축 거래를 관리함","나일 강을 막음","모든 농사를 중지함","군대를 없앰","47:13-26"],["야곱은 자신을 어디에 장사해 달라고 요셉에게 당부했나요?","조상들이 묻힌 곳","애굽 왕릉","나일 강 한가운데","시내 광야","47:29-30"]],"48":[["야곱이 축복한 요셉의 두 아들은 누구인가요?","므낫세와 에브라임","에서와 야곱","단과 갓","베레스와 세라","48:1"],["요셉의 큰아들은 누구인가요?","므낫세","에브라임","베냐민","유다","48:14"],["요셉의 작은아들은 누구인가요?","에브라임","므낫세","르우벤","시므온","48:14"],["야곱은 오른손을 누구의 머리 위에 얹었나요?","에브라임","므낫세","요셉","베냐민","48:14"],["요셉은 야곱의 손이 엇갈리자 어떻게 했나요?","바로잡으려 했음","크게 웃었음","그대로 떠났음","형들을 불렀음","48:17-18"],["야곱은 두 손자의 후손 중 누가 더 큰 자가 되리라고 했나요?","에브라임","므낫세","요셉","르우벤","48:19"]],"49":[["야곱이 죽기 전 축복하며 모은 사람들은 누구인가요?","열두 아들","애굽 제사장","블레셋 왕들","롯의 자손","49:1-2"],["야곱의 장자로 언급된 아들은 누구인가요?","르우벤","유다","요셉","베냐민","49:3"],["야곱의 축복에서 사자 새끼로 비유된 지파의 조상은 누구인가요?","유다","단","아셀","납달리","49:9"],["홀이 떠나지 않을 것이라고 예언된 사람은 누구인가요?","유다","르우벤","시므온","갓","49:10"],["야곱이 열매 많은 가지로 비유한 아들은 누구인가요?","요셉","베냐민","레위","잇사갈","49:22"],["야곱이 자신을 묻으라고 한 굴은 어디인가요?","막벨라 굴","아둘람 굴","아라랏 굴","도단 굴","49:29-32"]],"50":[["야곱이 죽은 뒤 그의 시신을 향유로 처리하도록 명한 사람은 누구인가요?","요셉","바로","르우벤","아비멜렉","50:2"],["애굽 사람들이 야곱을 위해 애곡한 기간은 몇 일이었나요?","70일","7일","30일","40일","50:3"],["요셉과 형제들이 야곱을 장사한 장소는 어디인가요?","막벨라 굴","애굽 왕릉","시내 산","베들레헴","50:13"],["요셉은 형들의 악한 일을 하나님이 무엇으로 바꾸셨다고 했나요?","선","더 큰 악","무의미한 일","왕의 명령","50:20"],["요셉이 죽을 때 나이는 몇 세였나요?","110세","100세","147세","120세","50:26"],["요셉은 죽기 전에 자신의 뼈를 어떻게 하라고 부탁했나요?","하나님이 이끄실 때 애굽에서 가지고 올라가라고 함","즉시 나일 강에 버리라고 함","왕궁 안에 두라고 함","아무 곳에 묻으라고 함","50:24-25"]]},"사도행전":{"1":[["부활하신 예수님은 제자들에게 몇 날 동안 나타나셨나요?","40일","3일","7일","50일","1:3"],["예수님이 제자들에게 약속하신 것은 무엇인가요?","성령의 권능","많은 재산","로마의 왕위","군사력","1:4-8"],["예수님이 승천하신 뒤 제자들이 돌아온 산은 어디인가요?","감람원 산","시내 산","갈멜 산","아라랏 산","1:12"],["베드로가 모인 형제들을 언급할 때 약 몇 명이 있었나요?","120명","12명","70명","500명","1:15"],["가룟 유다 대신 사도의 직분에 뽑힌 사람은 누구인가요?","맛디아","바나바","빌립","스데반","1:26"],["맛디아를 선택할 때 사용한 방법은 무엇인가요?","제비 뽑기","경주","금식 투표만","로마 총독의 추천","1:23-26"]],"2":[["성령이 강림하신 날은 어떤 절기였나요?","오순절","유월절 첫날","초막절","수전절","2:1-4"],["제자들에게 나타나 각 사람 위에 머문 것은 무엇과 같았나요?","불의 혀","눈송이","비둘기 깃털","번개 돌","2:3"],["사람들이 놀란 이유 중 하나는 무엇인가요?","각자 자기 나라 말로 듣게 됨","모든 사람이 잠듦","성전이 무너짐","바다가 갈라짐","2:6-11"],["베드로의 설교를 듣고 그날 더해진 사람은 약 몇 명인가요?","3,000명","300명","120명","5,000명","2:41"],["회개하고 예수 그리스도의 이름으로 세례를 받으면 받는 선물은 무엇인가요?","성령","왕관","금화","땅","2:38"],["초대교회 성도들이 힘쓴 일에 속하지 않는 것은 무엇인가요?","서로 재산을 빼앗음","사도의 가르침","교제와 떡을 뗌","기도","2:42-47"]],"3":[["베드로와 요한이 성전에 올라간 시간은 언제인가요?","제9시 기도 시간","새벽 3시","정오 12시","자정","3:1"],["걷지 못하던 사람이 앉아 구걸하던 문은 무엇이라 불렸나요?","미문","양문","수문","동문","3:2"],["베드로가 걷지 못하던 사람에게 없다고 한 것은 무엇인가요?","은과 금","믿음","기도","이름","3:6"],["베드로는 누구의 이름으로 일어나 걸으라고 했나요?","나사렛 예수 그리스도","모세","엘리야","아브라함","3:6"],["치유된 사람은 일어나 무엇을 했나요?","걷고 뛰며 하나님을 찬양함","도망가 숨음","왕에게 편지를 씀","배를 탔음","3:8"],["치유 사건 후 군중이 모인 행각의 이름은 무엇인가요?","솔로몬 행각","모세 행각","다윗 행각","헤롯 행각","3:11"]],"4":[["베드로와 요한이 전한 메시지 가운데 지도자들이 싫어한 것은 무엇인가요?","예수 안에 죽은 자의 부활이 있음","로마의 세금 인상","새 성전 건축","곡물 판매","4:1-2"],["베드로와 요한이 붙잡힌 뒤 믿는 남자의 수는 약 얼마가 되었나요?","5,000명","500명","12,000명","120명","4:4"],["베드로는 구원이 누구에게 있다고 선언했나요?","예수 그리스도","가이사","헤롯","멜기세덱","4:10-12"],["지도자들이 베드로와 요한에게 금지한 것은 무엇인가요?","예수의 이름으로 말하고 가르치는 것","기도하는 것","서로 돕는 것","집에 돌아가는 것","4:17-18"],["성도들이 한마음으로 기도했을 때 모인 곳에 무슨 일이 있었나요?","땅이 진동함","물이 범람함","궁전이 불탐","해가 멈춤","4:31"],["자신의 밭을 팔아 사도들 발 앞에 돈을 둔 사람의 별명은 무엇인가요?","바나바","맛디아","실라","디모데","4:36-37"]],"5":[["땅값의 일부를 감추고 거짓말한 부부는 누구인가요?","아나니아와 삽비라","아굴라와 브리스길라","사도 바울과 루디아","요셉과 마리아","5:1-10"],["아나니아가 거짓말한 상대라고 베드로가 지적한 분은 누구인가요?","성령","로마 황제","대제사장","헤롯","5:3-4"],["삽비라는 남편이 죽은 후 대략 얼마 지나 들어왔나요?","3시간","하루","일주일","40일","5:7"],["감옥에 갇힌 사도들을 밤에 나오게 한 존재는 누구인가요?","주의 사자","바로","대제사장","라반","5:19"],["사도들을 서둘러 처벌하지 말자고 조언한 율법교사의 이름은 무엇인가요?","가말리엘","아나니아","니고데모","가야바","5:34-39"],["매를 맞고 나온 사도들은 예수님의 이름을 위해 수치받은 일을 어떻게 여겼나요?","기뻐했음","포기했음","기억하지 못했음","서로 비난했음","5:40-41"]],"6":[["초대교회에서 음식 구제에 소외되었다고 원망한 쪽은 누구인가요?","헬라파 유대인 과부들","로마 군인","갈릴리 어부","헤롯의 가족","6:1"],["사도들이 말씀과 기도에 집중하기 위해 세운 사람의 수는 몇 명인가요?","7명","3명","12명","70명","6:3-6"],["선출된 일곱 사람 중 믿음과 성령이 충만하다고 묘사된 사람은 누구인가요?","스데반","베드로","요한","가말리엘","6:5"],["일곱 사람 중 복음 전파로 뒤에 등장하는 사람은 누구인가요?","빌립","디모데","바울","마가","6:5"],["스데반이 사람들 가운데 행한 것으로 기록된 것은 무엇인가요?","큰 기사와 표적","성전 건축","왕의 대관식","군사 훈련","6:8"],["공회에서 스데반의 얼굴은 무엇과 같아 보였나요?","천사의 얼굴","사자의 얼굴","어린아이의 얼굴","왕의 얼굴","6:15"]],"7":[["스데반이 긴 설교를 시작하며 먼저 언급한 조상은 누구인가요?","아브라함","다윗","솔로몬","베드로","7:2"],["스데반의 설교에서 애굽에 팔려 갔으나 하나님이 함께하셨던 사람은 누구인가요?","요셉","이삭","베냐민","에녹","7:9-10"],["모세가 애굽 사람을 죽였을 때 나이는 대략 몇 세였나요?","40세","20세","80세","120세","7:23-24"],["스데반은 성전 건축과 관련해 누구의 이름을 언급했나요?","솔로몬","헤롯","바로","고넬료","7:47"],["스데반이 하늘을 보고 하나님의 우편에 서 계시다고 한 분은 누구인가요?","인자 예수님","모세","아브라함","가브리엘","7:55-56"],["스데반을 돌로 칠 때 증인들이 옷을 맡긴 청년은 누구인가요?","사울","바나바","실라","디모데","7:58"]],"8":[["박해가 시작된 뒤 성도들은 주로 어디로 흩어졌나요?","유대와 사마리아 여러 지역","로마 궁전 안","애굽 광야만","시내 산 정상","8:1"],["사마리아 성에서 복음을 전한 사람은 누구인가요?","빌립","니고데모","고넬료","가말리엘","8:5"],["돈으로 성령의 권능을 사려 했던 사람은 누구인가요?","시몬","스데반","디모데","루디아","8:18-19"],["빌립이 길에서 만난 에디오피아 관리가 읽던 선지자의 글은 누구의 책인가요?","이사야","예레미야","에스겔","다니엘","8:28-32"],["에디오피아 관리가 빌립과 대화한 뒤 받은 예식은 무엇인가요?","세례","할례","제사장 임명","왕위 계승","8:36-38"],["빌립이 에디오피아 관리를 떠난 후 발견된 곳은 어디인가요?","아소도","다메섹","안디옥","예루살렘","8:39-40"]],"9":[["사울이 그리스도인들을 잡으러 가던 도시는 어디인가요?","다메섹","로마","아테네","고린도","9:1-3"],["다메섹 길에서 사울에게 들린 음성은 누구의 것이었나요?","예수님","베드로","가말리엘","바나바","9:4-5"],["사울이 다메섹에서 앞을 보지 못한 기간은 얼마였나요?","3일","7일","40일","1일","9:9"],["주님의 지시로 사울을 찾아간 제자는 누구인가요?","아나니아","실라","스데반","루디아","9:10-17"],["사울이 다메섹에서 죽임을 피하려고 빠져나온 방법은 무엇인가요?","광주리를 타고 성벽에서 내려감","바다를 건넘","땅굴을 팜","천사와 날아감","9:23-25"],["베드로가 욥바에서 다시 살린 여제자는 누구인가요?","다비다(도르가)","루디아","드루실라","브리스길라","9:36-41"]],"10":[["고넬료의 직업은 무엇인가요?","로마 군대 백부장","어부","세리","왕","10:1"],["고넬료가 살던 도시는 어디인가요?","가이사랴","고린도","에베소","빌립보","10:1"],["베드로가 환상 가운데 본 것은 무엇인가요?","각종 짐승이 담긴 큰 보자기 같은 그릇","불타는 떨기나무","일곱 촛대","돌판 두 개","10:11-12"],["베드로가 머물고 있던 욥바의 집주인은 누구인가요?","무두장이 시몬","마술사 시몬","가말리엘","고넬료","10:5-6"],["베드로가 고넬료의 집에서 깨달은 사실은 무엇인가요?","하나님은 사람을 외모로 취하지 않으심","이방인은 영원히 제외됨","로마에만 구원이 있음","세금이 가장 중요함","10:34-35"],["베드로가 말씀을 전하는 중 고넬료의 집에 임한 것은 무엇인가요?","성령","폭풍","눈","어두움","10:44-48"]],"11":[["베드로가 예루살렘에서 해명해야 했던 일은 무엇인가요?","할례받지 않은 이방인과 함께한 일","성전 벽을 무너뜨린 일","로마 군대에 입대한 일","안식일에 여행한 일","11:2-3"],["사도들과 형제들은 이방인에게도 무엇을 주셨다고 인정했나요?","생명 얻는 회개","왕의 자리","많은 금","성전 관리권","11:18"],["흩어진 성도들이 헬라인에게도 주 예수를 전한 도시는 어디인가요?","안디옥","로마","애굽","빌립보","11:20-21"],["안디옥 교회를 살피러 예루살렘에서 보낸 사람은 누구인가요?","바나바","헤롯","고넬료","가말리엘","11:22"],["제자들이 처음으로 '그리스도인'이라고 불린 곳은 어디인가요?","안디옥","예루살렘","고린도","아테네","11:26"],["큰 흉년이 들 것을 예언한 선지자는 누구인가요?","아가보","이사야","엘리야","스데반","11:27-28"]],"12":[["헤롯 왕이 칼로 죽인 사도는 누구인가요?","요한의 형제 야고보","베드로","도마","맛디아","12:1-2"],["베드로가 감옥에 있을 때 교회는 무엇을 했나요?","간절히 기도함","잔치를 열었음","전쟁을 선포함","도망만 갔음","12:5"],["감옥에서 베드로를 이끌고 나온 존재는 누구인가요?","주의 천사","고넬료","바나바","빌립","12:7-10"],["석방된 베드로의 목소리를 듣고 기뻐한 여종은 누구인가요?","로데","루디아","다비다","드루실라","12:13-14"],["헤롯이 영광을 하나님께 돌리지 않자 어떤 일이 일어났나요?","벌레에게 먹혀 죽음","즉시 회개함","바다를 건넘","왕위를 아들에게 물려줌","12:21-23"],["마가라고도 하는 요한의 어머니 이름은 무엇인가요?","마리아","살로메","한나","마르다","12:12"]],"13":[["성령의 지시로 선교를 위해 따로 세운 두 사람은 누구인가요?","바나바와 사울","베드로와 요한","야고보와 안드레","스데반과 빌립","13:2"],["첫 선교 여행에서 바나바와 사울이 배를 타고 향한 섬은 어디인가요?","구브로","몰타","그레데","밧모","13:4-5"],["사울을 가리켜 함께 사용한 다른 이름은 무엇인가요?","바울","아볼로","실라","디모데","13:9"],["바울을 대적하다 눈이 멀게 된 마술사는 누구인가요?","엘루마","시몬","알렉산더","데메드리오","13:8-11"],["선교 일행을 떠나 예루살렘으로 돌아간 사람은 누구인가요?","요한(마가)","실라","디모데","고넬료","13:13"],["바울과 바나바가 이방인에게 향한다고 선언한 이유는 무엇인가요?","일부 유대인들이 말씀을 배척했기 때문","모든 유대인이 이미 회심했기 때문","로마 황제가 명령해서","선박이 없어서","13:44-47"]],"14":[["루스드라에서 바울이 고쳐 준 사람의 상태는 어떠했나요?","나면서부터 걷지 못함","태어날 때부터 눈이 멂","귀가 들리지 않음","손이 마름","14:8-10"],["루스드라 사람들이 바나바를 어떤 신으로 불렀나요?","제우스","헤르메스","아폴론","아레스","14:12"],["루스드라 사람들이 바울을 어떤 신으로 불렀나요?","헤르메스","제우스","포세이돈","아르테미스","14:12"],["반대자들에게 돌에 맞아 성 밖으로 끌려간 사람은 누구인가요?","바울","바나바","디모데","실라","14:19"],["바울과 바나바가 루스드라 뒤에 전도한 도시는 어디인가요?","더베","로마","아테네","가이사랴","14:20-21"],["두 사람이 교회마다 임명한 직분은 무엇인가요?","장로","총독","황제","대제사장","14:23"]],"15":[["일부 사람들이 구원에 필수라고 주장한 의식은 무엇인가요?","모세의 법대로 할례받는 것","금식 40일","성전 건축","이방어 학습","15:1"],["이방인의 구원 문제로 열린 모임은 어디에서 열렸나요?","예루살렘","로마","아테네","고린도","15:4-6"],["이방인에게 믿음으로 구원받는 일을 증언한 사도는 누구인가요?","베드로","가룟 유다","도마","맛디아","15:7-11"],["예루살렘 회의에서 금하도록 권고된 것에 속하는 것은 무엇인가요?","우상의 제물과 피","모든 곡식","모든 채소","기도","15:19-20,29"],["바울과 바나바가 갈라서게 된 직접적인 이유는 무엇인가요?","마가를 데려갈지에 대한 이견","여행 경비","할례 여부","로마 시민권 문제","15:36-39"],["바울이 두 번째 여정에 동행자로 선택한 사람은 누구인가요?","실라","가룟 유다","고넬료","빌립","15:40"]],"16":[["바울의 전도 여행에 새로 합류한 젊은 제자는 누구인가요?","디모데","아볼로","마가","스데반","16:1-3"],["바울이 밤에 본 환상에서 도와 달라고 부른 사람은 어디 사람이었나요?","마게도냐 사람","애굽 사람","구브로 사람","사마리아 사람","16:9"],["빌립보에서 바울의 말을 듣고 세례받은 자주색 옷감 장사는 누구인가요?","루디아","드루실라","다비다","브리스길라","16:14-15"],["바울과 실라가 감옥에서 한 일은 무엇인가요?","기도하며 찬송함","무기를 만듦","경비를 공격함","잠만 잠","16:25"],["감옥 문들이 열리게 된 사건은 무엇인가요?","큰 지진","홍수","화재","폭풍우","16:26"],["간수가 어떻게 해야 구원받느냐고 묻자 바울이 한 대답의 핵심은 무엇인가요?","주 예수를 믿으라","로마 시민이 되라","성전을 지으라","돈을 바치라","16:30-31"]],"17":[["바울이 세 안식일 동안 회당에서 토론한 도시는 어디인가요?","데살로니가","로마","빌립보","드로아","17:1-3"],["날마다 성경을 상고하여 바울의 말을 확인한 사람들은 어느 도시의 사람들이었나요?","베뢰아","고린도","에베소","갈라디아","17:10-11"],["바울이 우상이 가득한 것을 보고 마음에 분노한 도시는 어디인가요?","아덴","로마","여리고","빌립보","17:16"],["바울이 아덴에서 설교한 장소는 어디인가요?","아레오바고","솔로몬 행각","성전 지성소","갈보리","17:19,22"],["바울은 사람들이 세운 어떤 제단을 언급했나요?","알지 못하는 신에게","유다의 왕에게","해의 신에게만","모세에게","17:23"],["아덴에서 바울의 말을 듣고 믿은 사람 가운데 한 명은 누구인가요?","디오누시오","가말리엘","가야바","헤롯","17:34"]],"18":[["고린도에서 바울과 함께 장막을 만드는 일을 한 부부는 누구인가요?","아굴라와 브리스길라","아나니아와 삽비라","요셉과 마리아","엘리사벳과 사가랴","18:2-3"],["아굴라와 브리스길라가 로마를 떠난 이유는 누구의 명령 때문인가요?","글라우디오","네로","아그립바","헤롯","18:2"],["고린도 회당장으로 온 집안과 함께 믿은 사람은 누구인가요?","그리스보","고넬료","엘루마","데메드리오","18:8"],["바울은 고린도에서 말씀을 가르치며 얼마나 머물렀나요?","1년 6개월","3개월","3년","7일","18:11"],["아가야 총독으로 유대인들이 바울을 고소한 상대는 누구인가요?","갈리오","벨릭스","베스도","빌라도","18:12"],["에베소에서 아볼로에게 하나님의 도를 더 정확하게 풀어 준 사람들은 누구인가요?","브리스길라와 아굴라","루디아와 디모데","스데반과 빌립","베드로와 안드레","18:24-26"]],"19":[["에베소에서 바울이 만난 제자들은 대략 몇 명이었나요?","12명","3명","70명","120명","19:7"],["바울이 에베소에서 매일 강론한 곳은 어디인가요?","두란노 서원","솔로몬 행각","헤롯 왕궁","로마 원형극장","19:9"],["에베소 사람들이 마술 책을 모아 태운 값은 얼마에 이르렀나요?","은 5만","은 5백","금 12","은 30","19:19"],["악한 귀신을 쫓아내려다 공격을 당한 이들은 누구의 일곱 아들이었나요?","스게와","가말리엘","보디발","고넬료","19:13-16"],["에베소에서 은 세공업자들을 선동한 사람은 누구인가요?","데메드리오","아볼로","실라","아굴라","19:24-25"],["에베소 군중이 외친 여신의 이름은 무엇인가요?","아데미","아프로디테","헤라","아테나","19:28"]],"20":[["드로아에서 바울의 긴 설교를 듣다 잠이 든 청년은 누구인가요?","유두고","디모데","드로비모","에라스도","20:9"],["유두고는 몇 층에서 떨어졌나요?","3층","2층","5층","7층","20:9"],["유두고가 떨어진 후 바울이 한 일은 무엇인가요?","내려가 그를 안고 살아 있다고 말함","즉시 배를 타고 떠남","관리자를 부름","재판을 열었음","20:10"],["바울이 에베소 장로들을 부른 장소는 어디인가요?","밀레도","로마","빌립보","아덴","20:17"],["바울은 장로들에게 교회를 돌보는 사람을 무엇이라 불렀나요?","감독자","황제","세리","군단장","20:28"],["바울이 예수님의 말씀으로 인용한 것은 무엇인가요?","주는 것이 받는 것보다 복되다","눈에는 눈 이에는 이","먼저 된 자가 왕이 된다","재물을 쌓아라","20:35"]],"21":[["가이사랴에서 바울 일행을 영접한 전도자는 누구인가요?","빌립","스데반","아볼로","마가","21:8"],["빌립에게는 예언하는 딸이 몇 명 있었나요?","4명","2명","7명","12명","21:9"],["바울이 결박되어 이방인에게 넘겨질 것이라 예언한 사람은 누구인가요?","아가보","아볼로","아나니아","디모데","21:10-11"],["바울이 하나님의 뜻을 위해 죽는 것도 각오한 도시는 어디인가요?","예루살렘","아덴","로마","고린도","21:13"],["바울이 성전을 더럽혔다고 오해받게 된 이유는 무엇인가요?","이방인을 성전에 데리고 들어간 줄 알았기 때문","성전을 허물었기 때문","금을 훔쳤기 때문","제사를 중단시켰기 때문","21:27-29"],["바울이 군중의 폭행에서 구출된 것은 누구의 개입 때문인가요?","로마 천부장과 군인들","헤롯 왕","가말리엘","아굴라","21:31-33"]],"22":[["바울은 자신이 태어난 곳을 어디라고 소개했나요?","다소","예루살렘","빌립보","로마","22:3"],["바울이 율법을 배운 스승은 누구인가요?","가말리엘","니고데모","엘리야","고넬료","22:3"],["다메섹으로 가던 바울은 정오 무렵 무엇을 보았나요?","하늘에서 비치는 큰 빛","무지개만","일곱 촛대","황금 궁전","22:6"],["다메섹에서 바울의 시력을 회복시킨 사람은 누구인가요?","아나니아","베드로","가말리엘","실라","22:12-13"],["바울은 로마 시민권을 어떻게 얻었다고 말했나요?","태어날 때부터","돈을 주고","전쟁 공로로","황제가 선물로","22:27-28"],["바울이 이방인에게 보냄받았다고 말하자 군중은 어떻게 반응했나요?","격렬히 소리치며 반대함","조용히 해산함","모두 박수침","왕을 세움","22:21-23"]],"23":[["바울의 입을 치라고 명한 대제사장의 이름은 무엇인가요?","아나니아","가야바","사가랴","엘리","23:2"],["바울이 공회에서 논쟁을 일으킨 주제는 무엇인가요?","죽은 자의 부활","세금의 액수","성전 건축","전쟁 계획","23:6-8"],["부활이 없다고 말하는 집단은 어느 쪽인가요?","사두개인","바리새인","에세네파","사마리아인","23:8"],["바울을 죽이기 전까지 먹지도 마시지도 않겠다고 맹세한 사람은 몇 명이 넘었나요?","40명","10명","20명","100명","23:12-13"],["바울을 죽이려는 음모를 듣고 알린 친족은 누구인가요?","바울의 생질","바울의 아버지","바울의 아내","바울의 딸","23:16"],["바울은 보호를 받아 어느 총독에게 보내졌나요?","벨릭스","갈리오","빌라도","베스도","23:24,33-35"]],"24":[["대제사장 측이 바울을 고소하려고 데려온 변호인은 누구인가요?","더둘로","아볼로","가말리엘","루가","24:1"],["바울을 심문한 로마 총독은 누구인가요?","벨릭스","베스도","갈리오","빌라도","24:22"],["벨릭스의 아내로 바울의 말을 함께 들은 사람은 누구인가요?","드루실라","버니게","루디아","브리스길라","24:24"],["바울이 벨릭스에게 강론한 주제에 속하지 않는 것은 무엇인가요?","전쟁에서 승리하는 법","의","절제","장차 오는 심판","24:25"],["벨릭스가 바울에게서 은근히 기대했던 것은 무엇인가요?","돈","왕위","군사 지휘","새로운 배","24:26"],["바울이 벨릭스 아래 갇혀 있었던 기간은 얼마나 되었나요?","2년","7일","40일","10년","24:27"]],"25":[["벨릭스 후임으로 부임한 총독은 누구인가요?","베스도","갈리오","빌라도","아그립바","25:1"],["유대 지도자들이 바울을 예루살렘으로 옮기려 한 숨은 계획은 무엇인가요?","길에서 죽이려는 것","로마로 호송하려는 것","석방하려는 것","식사를 대접하려는 것","25:2-3"],["바울이 재판을 요청한 최고 권력자는 누구인가요?","가이사","헤롯","대제사장","산헤드린 의장","25:11"],["베스도를 방문하여 바울 사건을 들은 왕은 누구인가요?","아그립바","다윗","솔로몬","아비멜렉","25:13"],["아그립바 왕과 함께 방문한 여인은 누구인가요?","버니게","루디아","드루실라","다비다","25:13"],["베스도는 바울을 어디로 보낼 때 죄목을 적어야 하는 일을 걱정했나요?","황제에게","안디옥 교회에","이스라엘 회당에","베드로에게","25:26-27"]],"26":[["바울이 자신을 변호하며 이야기한 회심 사건은 어느 길에서 있었나요?","다메섹 길","엠마오 길","여리고 길","가사 길","26:12-15"],["바울이 회심 당시 하늘에서 본 빛은 무엇보다 밝았나요?","해","달","별","횃불","26:13"],["바울이 자신의 이전 종교적 소속으로 언급한 집단은 무엇인가요?","바리새파","사두개파","에세네파","헤롯당","26:5"],["바울에게 예수 믿는 일을 전하도록 보내겠다고 하신 분은 누구인가요?","예수님","가말리엘","베드로","아그립바","26:15-18"],["바울의 변론을 듣고 그가 미쳤다고 외친 사람은 누구인가요?","베스도","아그립바","버니게","고넬료","26:24"],["아그립바는 바울이 누구에게 상소하지 않았다면 놓일 수 있었을 것이라고 말했나요?","가이사","헤롯","사두개인","갈리오","26:32"]],"27":[["로마로 호송되는 바울을 맡은 백부장은 누구인가요?","율리오","고넬료","갈리오","더둘로","27:1"],["항해 중 강한 광풍의 이름은 무엇인가요?","유라굴로","갈릴리풍","시로코","샬롬","27:14"],["바울이 배에 탄 사람들에게 안전을 약속하며 전한 것은 누구의 소식이었나요?","하나님의 사자","로마 황제","가말리엘","항구 관리","27:23-24"],["배에 타고 있던 사람은 모두 몇 명이었나요?","276명","120명","70명","500명","27:37"],["배가 좌초될 때 사람들은 어떻게 육지에 도착했나요?","헤엄치거나 널빤지를 붙잡음","비행기를 탐","바다가 갈라짐","큰 물고기를 탐","27:42-44"],["난파 후 사람들이 무사히 도착한 섬은 어디인가요?","멜리데(몰타)","구브로","밧모","그레데","27:39-28:1"]],"28":[["난파한 일행이 도착한 섬은 어디인가요?","멜리데(몰타)","구브로","밧모","사모","28:1"],["불을 피우던 바울의 손을 문 동물은 무엇인가요?","독사","늑대","사자","전갈","28:3"],["독사에 물린 바울에게 어떤 일이 있었나요?","해를 입지 않았음","즉시 죽었음","사흘간 실명함","손을 잃었음","28:5-6"],["바울이 열병과 이질을 앓던 아버지를 고쳐 준 섬의 대표는 누구인가요?","보블리오","고넬료","갈리오","베스도","28:7-8"],["바울이 최종적으로 도착하여 복음을 전한 도시는 어디인가요?","로마","아덴","다메섹","고린도","28:14-16"],["사도행전 마지막에서 바울이 자신의 셋집에 머문 기간은 얼마인가요?","2년","3개월","40일","7년","28:30-31"]]}};
+
+</script>
+<script>
+(() => {
+'use strict';
+const TOPICS = {
+ '창세기': ['천지 창조','에덴동산과 사람','선악과와 타락','가인과 아벨','아담의 계보','노아와 방주','홍수의 시작','홍수가 그치다','무지개 언약','노아 자손의 계보','바벨탑','아브람의 부르심','아브람과 롯','롯을 구한 아브람','하나님의 언약','하갈과 이스마엘','이름과 할례의 언약','세 방문자와 중보','소돔과 고모라','아브라함과 아비멜렉','이삭의 탄생','모리아 산의 시험','사라의 죽음','이삭과 리브가','쌍둥이 형제','이삭과 우물','야곱의 축복','벧엘의 꿈','야곱의 결혼','야곱의 자녀들','야곱과 라반','야곱의 씨름','형제의 재회','디나와 세겜','벧엘과 라헬','에서의 자손','요셉의 꿈','유다와 다말','보디발의 집','감옥의 두 꿈','바로의 꿈','형들의 애굽 방문','베냐민과 재회','요셉의 은잔 시험','요셉의 정체','야곱의 애굽 이주','애굽의 야곱 가족','두 손자에게 축복','열두 아들의 축복','야곱과 요셉의 죽음'],
+ '사도행전': ['예수님의 승천','오순절 성령 강림','미문 앞의 치유','담대한 사도들','아나니아와 삽비라','일곱 일꾼을 세움','스데반의 설교','빌립의 전도','사울의 회심','고넬료의 회심','안디옥 교회','베드로의 구출','첫 선교 여행','루스드라의 전도','예루살렘 회의','빌립보의 복음','아덴의 설교','고린도와 아볼로','에베소의 부흥','유두고와 작별','예루살렘의 바울','바울의 증언','바울 암살 음모','벨릭스 앞의 변론','가이사에게 상소','아그립바 앞의 증언','풍랑과 난파','멜리데와 로마']
+};
+const BOOKS = {'창세기':50,'사도행전':28};
+const KEY = 'wordquiz_chapters_2026_v1';
+let saved;
+try { saved = JSON.parse(localStorage.getItem(KEY) || '{}') } catch (_) { saved = {} }
+if (!saved || typeof saved !== 'object') saved = {};
+if (!saved.chapters || typeof saved.chapters !== 'object') saved.chapters = {};
+if (!Array.isArray(saved.wrongIds)) saved.wrongIds = [];
+if (!Number.isInteger(saved.attempted)) saved.attempted = 0;
+let selectedBook = '창세기';
+let search = '';
+let state = null;
+let lastSetup = null;
+const $ = (id) => document.getElementById(id);
+// Uses the operating system's Korean text-to-speech engine. No account/API/network required.
+const SUPPORTS_SPEECH = ('speechSynthesis' in window) && ('SpeechSynthesisUtterance' in window);
+const VOICE_SETTING_KEY = 'wordquiz_audio_v3';
+let autoVoice = true;
+try {const preference = localStorage.getItem(VOICE_SETTING_KEY);if(preference !== null)autoVoice = preference === 'on'} catch (_) {}
+let voiceGeneration = 0;
+let speechActive = false;
+function speechStatus(message, active = false) {
+  const el = $('voiceStatus');
+  if (!el)return;
+  el.textContent=message;
+  el.classList.toggle('speaking',active);
+}
+function stopSpeech(message) {
+  voiceGeneration++;
+  speechActive=false;
+  if(SUPPORTS_SPEECH){try{window.speechSynthesis.cancel()}catch(_){}}
+  speechStatus(message || '음성을 중지했어요. 다시 듣기를 눌러주세요.');
+}
+function speechText(includeOptions) {
+  if (!state || screens.quiz.classList.contains('hidden'))return '';
+  const q=currentQuestion();
+  let phrase=`${q.book} ${q.chapter}장. ${state.index+1}번 문제. ${q.question}`;
+  if (includeOptions) phrase += ' ' + state.options.map((option,i)=>`${i+1}번. ${option}.`).join(' ');
+  return phrase;
+}
+function playSpeech(includeOptions = true) {
+  if (!SUPPORTS_SPEECH) {speechStatus('이 브라우저는 음성 읽기를 지원하지 않습니다. Safari 또는 Chrome에서 사용해 주세요.');return}
+  const phrase=speechText(includeOptions);
+  if (!phrase)return;
+  stopSpeech('음성을 준비하고 있어요…');
+  const generation=voiceGeneration;
+  const utterance=new SpeechSynthesisUtterance(phrase);
+  utterance.lang='ko-KR';utterance.rate=0.92;utterance.pitch=1;utterance.volume=1;
+  try{
+    const list=window.speechSynthesis.getVoices();
+    const korean=list.find(v=>String(v.lang).toLowerCase()==='ko-kr')||list.find(v=>String(v.lang).toLowerCase().startsWith('ko'));
+    if(korean)utterance.voice=korean;
+  }catch(_){}
+  utterance.onstart=()=>{if(generation===voiceGeneration){speechActive=true;speechStatus(includeOptions?'🔊 문제와 보기 4개를 읽고 있어요.':'🔊 문제를 읽고 있어요.',true)}};
+  utterance.onend=()=>{if(generation===voiceGeneration){speechActive=false;speechStatus('다시 들으려면 읽기 버튼을 눌러주세요.')}};
+  utterance.onerror=(event)=>{
+    if(generation!==voiceGeneration)return;
+    speechActive=false;
+    if(event.error==='interrupted'||event.error==='canceled')return;
+    speechStatus('음성 재생이 막혔어요. 아래 듣기 버튼을 직접 한 번 눌러주세요.');
+  };
+  try{
+    window.speechSynthesis.speak(utterance);
+    // Autoplay may be restricted in iOS previews: the user-facing buttons always retry on a tap.
+    speechStatus('음성 재생 중… 소리가 나지 않으면 ▶ 문제와 보기 듣기를 눌러주세요.',true);
+  }catch(_){speechStatus('음성 재생이 불가능합니다. Safari/Chrome에서 다시 시도해 주세요.')}
+}
+
+const screens = {home:$('homeScreen'),quiz:$('quizScreen'),result:$('resultScreen')};
+const esc = (s) => String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const shuffle = (arr) => {let o=arr.slice();for(let i=o.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[o[i],o[j]]=[o[j],o[i]]}return o};
+const persist = () => {try{localStorage.setItem(KEY,JSON.stringify(saved))}catch(_){/* 파일에서도 퀴즈는 정상 동작 */}};
+const qId = (item) => `${item.book}:${item.chapter}:${item.index}`;
+function allQuestions(book) {
+  const ret=[];
+  for (const b of (book?[book]:Object.keys(BOOKS))) {
+    for (let c=1;c<=BOOKS[b];c++) {
+      (QUIZ_BANK[b][c] || []).forEach((q,index)=>ret.push({book:b,chapter:c,index,question:q[0],correct:q[1],wrong:q.slice(2,5),ref:q[5]}));
+    }
+  }
+  return ret;
+}
+const ALL_QUESTIONS = allQuestions();
+const LOOKUP = new Map(ALL_QUESTIONS.map(item=>[qId(item),item]));
+function switchScreen(name) {
+  if(name!=='quiz')stopSpeech('');
+  Object.entries(screens).forEach(([k,el])=>el.classList.toggle('hidden',k!==name));
+  window.scrollTo(0,0);
+}
+function renderHome() {
+  switchScreen('home');
+  const completed = Object.keys(saved.chapters).filter(k=>saved.chapters[k]?.completed).length;
+  $('doneCount').innerHTML = `${completed}<small>장</small>`;
+  $('doneDetail').textContent = completed?`전체 78장 중 ${completed}장 완료`:'이제 시작해 보세요';
+  $('reviewCount').innerHTML = `${saved.wrongIds.length}<small>문제</small>`;
+  $('startReview').disabled = saved.wrongIds.length === 0;
+  $('startReview').style.opacity = saved.wrongIds.length===0 ? '.48':'1';
+  document.querySelectorAll('[data-book]').forEach(tab=>{
+    const active=tab.dataset.book===selectedBook;
+    tab.classList.toggle('active',active);
+    tab.setAttribute('aria-selected',String(active));
+  });
+  $('bookNote').textContent = selectedBook==='창세기'?'창조와 타락, 믿음의 조상들, 요셉 이야기까지':'성령 강림에서 사도들의 선교와 로마에서의 증언까지';
+  renderChapters();
+}
+function renderChapters() {
+  const grid=$('chapterGrid');
+  grid.innerHTML='';
+  let found=0;
+  for(let c=1;c<=BOOKS[selectedBook];c++) {
+    const topic=TOPICS[selectedBook][c-1];
+    if(search && !(String(c).includes(search)||topic.includes(search)))continue;
+    found++;
+    const rec=saved.chapters[`${selectedBook}:${c}`];
+    const done=rec?.completed;
+    const btn=document.createElement('button');
+    btn.type='button';
+    btn.className=`chapter-card${done?' complete':''}`;
+    btn.setAttribute('aria-label',`${selectedBook} ${c}장 ${topic}, 6문제${done?', 학습 완료':''}`);
+    btn.innerHTML=`<span class="chapter-num">CHAPTER ${String(c).padStart(2,'0')}</span><span class="chapter-topic">${esc(topic)}</span><span class="chapter-meta">6문제 · ${done?`최고 ${rec.best}/6`: '학습하기 →'}</span>${done?'<span class="complete-pill">완료 ✓</span>':''}`;
+    btn.addEventListener('click',()=>startChapter(selectedBook,c));
+    grid.appendChild(btn);
+  }
+  if(!found) grid.innerHTML='<div class="empty-state">해당하는 장을 찾지 못했어요. 다른 번호나 단어로 검색해 보세요.</div>';
+}
+function startChapter(book,chapter) {
+  startQuiz({mode:'chapter',book,chapter,items:allQuestions(book).filter(q=>q.chapter===chapter)});
+}
+function startRandom(book) {
+  const qs=shuffle(book?ALL_QUESTIONS.filter(q=>q.book===book):ALL_QUESTIONS).slice(0,20);
+  startQuiz({mode:'random',book,chapter:null,items:qs});
+}
+function startReview() {
+  const items=shuffle(saved.wrongIds.map(id=>LOOKUP.get(id)).filter(Boolean));
+  if(!items.length){window.alert('현재 복습할 문제가 없습니다. 먼저 장별 퀴즈를 풀어 보세요.');return}
+  startQuiz({mode:'review',book:null,chapter:null,items});
+}
+function startQuiz(setup) {
+  if(!setup.items.length){window.alert('문제가 없습니다.');return}
+  lastSetup={...setup,items:setup.items.slice()};
+  state={...setup,items:shuffle(setup.items),index:0,results:[],tries:0,wrongOptions:[],finished:false,options:[]};
+  switchScreen('quiz');
+  renderQuestion();
+}
+function currentQuestion(){return state.items[state.index]}
+function quizLabel(){
+  if(state.mode==='chapter')return `${state.book} ${state.chapter}장 · ${TOPICS[state.book][state.chapter-1]}`;
+  if(state.mode==='review')return '틀린 문제 복습';
+  return state.book?`${state.book} 랜덤 퀴즈`:'두 권 전체 랜덤 퀴즈';
+}
+function renderQuestion() {
+  state.tries=0;state.wrongOptions=[];state.finished=false;
+  const q=currentQuestion();
+  state.options=shuffle([q.correct,...q.wrong]);
+  $('quizModeLabel').textContent=quizLabel();
+  $('questionFraction').textContent=`${state.index+1} / ${state.items.length}`;
+  $('progressBar').style.width=`${(state.index/state.items.length)*100}%`;
+  $('questionTag').textContent=`${q.book} ${q.chapter}장`;
+  $('questionCounter').textContent=`QUESTION ${String(state.index+1).padStart(2,'0')}`;
+  $('questionTitle').textContent=q.question;
+  $('feedback').className='feedback hidden';
+  $('feedback').innerHTML='';
+  $('nextQuestion').classList.add('hidden');
+  $('nextQuestion').textContent=state.index===state.items.length-1?'결과 확인 →':'다음 문제 →';
+  updateOptions();updateFooter();
+  if(autoVoice)playSpeech(true); else speechStatus('듣기 버튼을 누르면 언제든 다시 들을 수 있어요.');
+}
+function updateOptions() {
+  const q=currentQuestion();
+  const container=$('options');
+  container.innerHTML='';
+  state.options.forEach((label,i)=>{
+    const isCorrect=label===q.correct;
+    const isWrong=state.wrongOptions.includes(label);
+    const btn=document.createElement('button');
+    btn.type='button';
+    btn.className='option';
+    if(state.finished){btn.disabled=true;if(isCorrect)btn.classList.add('correct');else if(isWrong)btn.classList.add('wrong');else btn.classList.add('inactive')}
+    else if(isWrong){btn.disabled=true;btn.classList.add('wrong')}
+    btn.setAttribute('aria-label',`${i+1}번 보기: ${label}`);
+    btn.innerHTML=`<span class="option-index">${i+1}</span><span class="option-text">${esc(label)}</span>${state.finished && isCorrect?'<span class="option-icon" aria-hidden="true">✓</span>':isWrong?'<span class="option-icon" aria-hidden="true">×</span>':''}`;
+    btn.addEventListener('click',()=>choose(label));
+    container.appendChild(btn);
+  });
+}
+function setFeedback(type,heading,detail,ref) {
+  const el=$('feedback');el.className=`feedback ${type}`;
+  el.innerHTML=`<b>${esc(heading)}</b><span>${esc(detail)}</span>${ref?`<small>📖 본문 근거: ${esc(ref)}</small>`:''}`;
+}
+function updateFooter(){
+  const done=state.results.filter(r=>r.grade>0).length+(state.finished && state.grade>0?1:0);
+  $('currentRight').textContent=String(done);
+  $('attemptLabel').textContent=state.finished?'문제 풀이 완료':`남은 기회 ${2-state.tries}회`;
+}
+function choose(answer) {
+  if(!state || state.finished || state.wrongOptions.includes(answer))return;
+  stopSpeech('답을 선택했어요. 다음 문제에서도 음성을 들을 수 있습니다.');
+  const q=currentQuestion();
+  const ref=`${q.book} ${q.ref}`;
+  if(answer===q.correct) {
+    state.finished=true;
+    state.grade=state.tries===0?2:1;
+    setFeedback('good',state.tries===0?'✓ 정답입니다!':'✓ 재도전 성공! 정답입니다!',`정답은 “${q.correct}”입니다. ${state.tries===0?'첫 시도에 맞혔어요!':'두 번째 기회에 잘 맞혔어요!'}`,ref);
+  } else {
+    state.tries++;
+    state.wrongOptions.push(answer);
+    if(state.tries===1){setFeedback('retry','한 번 더 도전해 보세요!',`“${answer}”은(는) 정답이 아니에요. 남은 보기 중에서 다시 골라 보세요.`,null)}
+    else {
+      state.finished=true;state.grade=0;
+      setFeedback('reveal','정답을 확인해 보세요',`정답은 “${q.correct}”입니다. 해당 장절을 읽으며 다시 기억해 보세요.`,ref);
+    }
+  }
+  updateOptions();updateFooter();
+  if(state.finished){$('nextQuestion').classList.remove('hidden');$('progressBar').style.width=`${((state.index+1)/state.items.length)*100}%`}
+}
+function nextQuestion() {
+  if(!state?.finished)return;
+  state.results.push({id:qId(currentQuestion()),grade:state.grade});
+  if(state.index+1>=state.items.length){finishQuiz();return}
+  state.index++;renderQuestion();
+  const card=document.querySelector('.quiz-card');if(card)card.scrollIntoView({behavior:'smooth',block:'start'});
+}
+function finishQuiz(){
+  const correct=state.results.filter(r=>r.grade>0).length;
+  const first=state.results.filter(r=>r.grade===2).length;
+  const second=state.results.filter(r=>r.grade===1).length;
+  const missed=state.results.filter(r=>r.grade===0).length;
+  const wrongSet=new Set(saved.wrongIds);
+  state.results.forEach(r=>r.grade===2?wrongSet.delete(r.id):wrongSet.add(r.id));
+  saved.wrongIds=Array.from(wrongSet);
+  saved.attempted+=state.results.length;
+  if(state.mode==='chapter'){
+    const key=`${state.book}:${state.chapter}`;
+    const prior=saved.chapters[key]?.best||0;
+    saved.chapters[key]={completed:true,best:Math.max(prior,correct),last:correct};
+  }
+  persist();switchScreen('result');
+  $('resultHeading').textContent=correct===state.items.length?'모든 문제를 맞혔어요!':correct===0?'다시 도전하면 더 잘할 수 있어요!':'오늘의 말씀 공부를 마쳤어요!';
+  $('resultSubtitle').textContent=quizLabel();
+  $('resultScore').textContent=String(correct);
+  $('resultMax').textContent=`/ ${state.items.length}문제 정답`;
+  $('firstTryCount').textContent=String(first);
+  $('secondTryCount').textContent=String(second);
+  $('wrongCount').textContent=String(missed);
+  const next=$('nextChapter');
+  if(state.mode==='chapter' && state.chapter<BOOKS[state.book]){next.classList.remove('hidden');next.textContent=`${state.book} ${state.chapter+1}장 시작 →`}
+  else if(state.mode==='chapter' && state.book==='창세기' && state.chapter===50){next.classList.remove('hidden');next.textContent='사도행전 1장 시작 →'}
+  else next.classList.add('hidden');
+}
+function exitQuiz(){ if(state && state.results.length && !state.finished){if(!window.confirm('퀴즈를 종료할까요? 이번 회차 기록은 결과를 확인할 때 저장됩니다.'))return}renderHome() }
+$('goHome').addEventListener('click',()=>renderHome());
+$('startFirst').addEventListener('click',()=>startChapter('창세기',1));
+$('startRandom').addEventListener('click',()=>startRandom(null));
+$('bookRandom').addEventListener('click',()=>startRandom(selectedBook));
+$('startReview').addEventListener('click',startReview);
+document.querySelectorAll('[data-book]').forEach(tab=>tab.addEventListener('click',()=>{selectedBook=tab.dataset.book;search='';$('chapterSearch').value='';renderHome()}));
+$('chapterSearch').addEventListener('input',event=>{search=event.target.value.trim();renderChapters()});
+$('quitQuiz').addEventListener('click',exitQuiz);
+$('nextQuestion').addEventListener('click',nextQuestion);
+$('repeatQuiz').addEventListener('click',()=>lastSetup&&startQuiz(lastSetup));
+$('backToChapters').addEventListener('click',()=>renderHome());
+$('nextChapter').addEventListener('click',()=>{
+  if(!state||state.mode!=='chapter')return;
+  if(state.chapter<BOOKS[state.book])startChapter(state.book,state.chapter+1);
+  else if(state.book==='창세기' && state.chapter===50){selectedBook='사도행전';startChapter('사도행전',1)}
+  else renderHome();
+});
+document.addEventListener('keydown',event=>{
+  if(screens.quiz.classList.contains('hidden')||!state)return;
+  if(['INPUT','TEXTAREA'].includes(document.activeElement?.tagName))return;
+  if(/^[1-4]$/.test(event.key) && !state.finished){const label=state.options[Number(event.key)-1];if(label)choose(label)}
+  else if(event.key==='Enter' && state.finished){nextQuestion()}
+});
+$('autoRead').checked = autoVoice;
+if(!SUPPORTS_SPEECH){
+  $('autoRead').checked=false;$('autoRead').disabled=true;
+  ['listenQuestion','listenAll','stopListening'].forEach(id=>$(id).disabled=true);
+  speechStatus('이 미리보기에서 음성을 사용할 수 없습니다. Safari 또는 Chrome으로 열어 주세요.');
+}
+$('autoRead').addEventListener('change',(event)=>{
+  autoVoice=event.target.checked;
+  try{localStorage.setItem(VOICE_SETTING_KEY,autoVoice?'on':'off')}catch(_){}
+  if(autoVoice){playSpeech(true)}else{stopSpeech('자동 읽기를 껐어요. 원할 때 듣기 버튼을 눌러주세요.');}
+});
+$('listenQuestion').addEventListener('click',()=>playSpeech(false));
+$('listenAll').addEventListener('click',()=>playSpeech(true));
+$('stopListening').addEventListener('click',()=>stopSpeech());
+document.getElementById('bootWarning')?.classList.add('hidden');
+renderHome();
+})();
+
+</script>
+</body>
+</html>
