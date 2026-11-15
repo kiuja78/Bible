@@ -4,8 +4,16 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta name="theme-color" content="#1b2744"/>
+<meta name="apple-mobile-web-app-title" content="바이블 스터디"/>
+<meta name="application-name" content="바이블 스터디"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-v67.png"/>
+<link rel="icon" type="image/png" sizes="64x64" href="./favicon.png"/>
+<link rel="manifest" href="./manifest.webmanifest"/>
 <meta name="description" content="창세기와 사도행전 78장 · 장별 868문제 · 음성 읽기와 한눈에 보는 학습 진도"/>
-<title>하루말씀 V6.5 · 프리미엄 모바일 디자인 · 성경퀴즈 868문제</title>
+<title>바이블 스터디</title>
 <style>:root{--ink:#263735;--forest:#234f48;--teal:#4e9186;--muted:#788783;--edge:#e3e9e6;--cream:#f7f7f3;--white:#fff;--yellow:#e7c98c;--lav:#eeeaf9;--mint:#e4f2ec;--pink:#f8eae4;--shadow:0 16px 42px rgba(31,58,52,.055)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif;margin:0;background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased;word-break:keep-all}button,input,select{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.5}a{color:inherit}.hidden{display:none!important}.app-root{min-height:100vh;display:flex;flex-direction:column}.content{width:min(1160px,100% - 44px);margin:33px auto 74px;flex:1}.view{animation:appear .24s ease}@keyframes appear{from{opacity:.5;transform:translateY(8px)}to{opacity:1;transform:none}}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #9acbc0;outline-offset:3px}
 .site-header{height:88px;background:rgba(255,255,255,.95);border-bottom:1px solid #e9edea}.header-inner{width:min(1160px,100% - 44px);height:100%;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;border:0;background:none;padding:0;color:var(--ink);white-space:nowrap}.brand-icon{background:#28574f;color:#f4dc9f;width:42px;height:42px;border-radius:13px;display:grid;place-items:center;font-size:25px}.brand-lines{text-align:left;display:flex;flex-direction:column;gap:3px}.brand-lines strong{font-size:20px;letter-spacing:-.9px}.brand-lines small{font-size:9px;letter-spacing:1.6px;color:#9ca8a2;font-weight:750}.top-nav{display:flex;gap:3px;border:1px solid #e8efeb;background:#f8faf8;border-radius:14px;padding:4px}.nav-btn{border:0;background:transparent;border-radius:10px;padding:12px 22px;color:#7b8a85;font-size:13px;font-weight:750;white-space:nowrap}.nav-btn.active{background:#fff;box-shadow:0 3px 11px #263f3610;color:#2d5c51}.header-actions{display:flex;gap:10px;align-items:center}.header-icon{width:42px;height:42px;border:1px solid var(--edge);border-radius:50%;background:#fff;color:#42796c;font-size:22px}.user-pill{display:flex;align-items:center;gap:7px;background:#f3f7f3;border:1px solid #e7ece8;border-radius:30px;padding:4px 9px 4px 5px;font-size:12px;color:#52635c}.user-pill>span:first-child{width:30px;height:30px;background:#d9ebe0;border-radius:50%;display:grid;place-items:center;font-size:14px;color:#387c65;font-weight:850}.chevron{color:#9cab9f}
@@ -302,6 +310,16 @@ body{overflow-x:hidden;background:#14223e radial-gradient(circle at 18% -10%,rgb
 .answer-next-action{scroll-margin-top:135px}
 .answer-next-action .answer-next-btn:focus-visible{outline:3px solid #ddbd7d;outline-offset:3px}
 @media(max-width:640px){.study-right{min-height:156px!important}.quiz-card-bottom{gap:6px;flex-wrap:wrap}.site-header{isolation:isolate}}
+
+/* V6.6: tactile logo and subtle motion, no moving home-screen icon (iOS restriction) */
+.brand-icon{position:relative;isolation:isolate;overflow:hidden!important;border-radius:13px!important;width:44px!important;height:44px!important;padding:0!important;background:#15223e!important;border:1px solid rgba(237,205,151,.4)!important;box-shadow:0 3px 9px rgba(0,0,0,.18)}
+.brand-icon img.brand-logo-img{display:block;position:relative;z-index:1;width:100%;height:100%;object-fit:cover;border-radius:12px;transition:transform .3s ease}
+.brand-icon:after{content:'';position:absolute;z-index:2;inset:-65%;pointer-events:none;background:linear-gradient(105deg,transparent 43%,rgba(255,235,190,.0) 47%,rgba(255,236,193,.4) 50%,rgba(255,235,190,0) 53%,transparent 58%);transform:translateX(-80%) rotate(0deg);animation:bibleShimmer 8s ease-in-out infinite}
+@keyframes bibleShimmer{0%,70%,100%{transform:translateX(-80%)}80%{transform:translateX(80%)}}
+.brand:hover .brand-logo-img{transform:scale(1.08)}
+.brand:active .brand-logo-img{transform:scale(.94)}
+.brand{cursor:pointer}
+@media(prefers-reduced-motion:reduce){.brand-icon:after{animation:none}.brand-icon img.brand-logo-img{transition:none}}
 </style>
 </head>
 <body>
@@ -326,7 +344,7 @@ body{overflow-x:hidden;background:#14223e radial-gradient(circle at 18% -10%,rgb
 <div id="appRoot" class="app-root">
   <header class="site-header">
     <div class="header-inner">
-      <button type="button" id="brandBtn" class="brand" aria-label="대시보드로 이동"><span class="brand-icon">✦</span><span class="brand-lines"><strong>하루말씀</strong><small>GENESIS &amp; ACTS</small></span></button>
+      <button type="button" id="brandBtn" class="brand" aria-label="바이블 스터디 새로고침" title="새로고침"><span class="brand-icon"><img class="brand-logo-img" src="./assets/icon-192.png?v=67" alt="" width="40" height="40"/></span><span class="brand-lines"><strong>하루말씀</strong><small>GENESIS &amp; ACTS</small></span></button>
       <nav class="top-nav" aria-label="주요 메뉴"><button data-nav="home" class="nav-btn active">대시보드</button><button data-nav="chapters" class="nav-btn">학습 목차</button><button data-nav="stats" class="nav-btn">내 진도</button></nav>
       <div class="header-actions"><button id="voiceSettings" class="header-icon" aria-label="음성 설정" title="음성 설정">♫</button><button id="userBtn" class="user-pill"><span id="userInitial">나</span><b id="headerName">학습자</b><span class="chevron">⌄</span></button></div>
     </div>
@@ -564,7 +582,7 @@ function speakSummary(){if(!quiz||quiz.mode!=='chapter')return;const v=DATA.SUMM
 function attach(){
  $('enterApp').addEventListener('click',()=>setName($('introName').value));$('introName').addEventListener('keydown',e=>{if(e.key==='Enter')setName(e.target.value)});
  $('continueApp').addEventListener('click',()=>{$('introScreen').classList.add('hidden');goView('home')});$('changeIntroUser').addEventListener('click',()=>{$('introResume').classList.add('hidden');$('introForm').classList.remove('hidden');$('introName').value='';$('introName').focus()});
- $('brandBtn').addEventListener('click',()=>goView('home'));document.querySelectorAll('[data-nav]').forEach(el=>el.addEventListener('click',()=>goView(el.dataset.nav)));
+ $('brandBtn').addEventListener('click',()=>{stopVoice();window.location.reload();});document.querySelectorAll('[data-nav]').forEach(el=>el.addEventListener('click',()=>goView(el.dataset.nav)));
  $('resumeBtn').addEventListener('click',resumeAction);$('continueStart').addEventListener('click',resumeAction);$('heroToc').addEventListener('click',()=>goView('chapters'));$('seeStats').addEventListener('click',()=>goView('stats'));$('reviewBtn').addEventListener('click',startReview);$('homeGenesis').addEventListener('click',()=>{selectedBook='창세기';goView('chapters')});$('homeActs').addEventListener('click',()=>{selectedBook='사도행전';goView('chapters')});$('allRandom').addEventListener('click',()=>startRandom(null));
  document.querySelectorAll('.book-tab').forEach(b=>b.addEventListener('click',()=>{selectedBook=b.dataset.book;filter='all';query='';$('chapterSearch').value='';renderChapters()}));document.querySelectorAll('.filter-btn').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;renderChapters()}));$('chapterSearch').addEventListener('input',e=>{query=e.target.value.trim();renderChapters()});
  $('answerFeedback').addEventListener('click',async(e)=>{const action=e.target.closest('[data-action]')?.dataset.action;if(!action||!quiz)return;
