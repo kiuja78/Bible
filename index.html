@@ -9,9 +9,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 <meta name="mobile-web-app-capable" content="yes"/>
-<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-v67.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-v68.png"/>
 <link rel="icon" type="image/png" sizes="64x64" href="./favicon.png"/>
-<link rel="manifest" href="./manifest.webmanifest"/>
+<link rel="manifest" href="./manifest.webmanifest?v=68"/>
 <meta name="description" content="창세기와 사도행전 78장 · 장별 868문제 · 음성 읽기와 한눈에 보는 학습 진도"/>
 <title>바이블 스터디</title>
 <style>:root{--ink:#263735;--forest:#234f48;--teal:#4e9186;--muted:#788783;--edge:#e3e9e6;--cream:#f7f7f3;--white:#fff;--yellow:#e7c98c;--lav:#eeeaf9;--mint:#e4f2ec;--pink:#f8eae4;--shadow:0 16px 42px rgba(31,58,52,.055)}
@@ -320,6 +320,16 @@ body{overflow-x:hidden;background:#14223e radial-gradient(circle at 18% -10%,rgb
 .brand:active .brand-logo-img{transform:scale(.94)}
 .brand{cursor:pointer}
 @media(prefers-reduced-motion:reduce){.brand-icon:after{animation:none}.brand-icon img.brand-logo-img{transition:none}}
+/* V6.8: Android browser/in-app animated character; launcher icon remains static. */
+.brand-icon{overflow:visible!important;contain:layout style}
+.brand-icon .brand-logo-img{display:block;will-change:transform}
+.android-animated-character .brand-icon{position:relative;isolation:isolate}
+.android-animated-character .brand-icon img.brand-logo-img{animation:characterHello 5.2s ease-in-out infinite;transform-origin:50% 58%;image-rendering:auto}
+.android-animated-character .brand-icon::before{content:"";position:absolute;width:5px;height:5px;border-radius:50%;background:#ffe7a7;right:-2px;top:-2px;box-shadow:0 0 8px #f9d783;z-index:4;animation:characterSpark 5.2s ease-in-out infinite;pointer-events:none}
+@keyframes characterHello{0%,11%,37%,59%,100%{transform:translateY(0) rotate(0deg)}17%,26%{transform:translateY(-2px) rotate(-5deg)}32%{transform:translateY(0) rotate(4deg)}44%{transform:translateY(-3px) rotate(3deg)}49%{transform:translateY(0) rotate(-2deg)}}
+@keyframes characterSpark{0%,16%,40%,100%{opacity:0;transform:scale(.5)}24%,32%{opacity:1;transform:scale(1.2)}}
+@media(prefers-reduced-motion:reduce){.android-animated-character .brand-icon img.brand-logo-img,.android-animated-character .brand-icon::before{animation:none!important}}
+
 </style>
 </head>
 <body>
@@ -344,7 +354,7 @@ body{overflow-x:hidden;background:#14223e radial-gradient(circle at 18% -10%,rgb
 <div id="appRoot" class="app-root">
   <header class="site-header">
     <div class="header-inner">
-      <button type="button" id="brandBtn" class="brand" aria-label="바이블 스터디 새로고침" title="새로고침"><span class="brand-icon"><img class="brand-logo-img" src="./assets/icon-192.png?v=67" alt="" width="40" height="40"/></span><span class="brand-lines"><strong>하루말씀</strong><small>GENESIS &amp; ACTS</small></span></button>
+      <button type="button" id="brandBtn" class="brand" aria-label="바이블 스터디 새로고침" title="새로고침"><span class="brand-icon"><img class="brand-logo-img" src="./assets/icon-192.png?v=68" alt="" width="40" height="40"/></span><span class="brand-lines"><strong>하루말씀</strong><small>GENESIS &amp; ACTS</small></span></button>
       <nav class="top-nav" aria-label="주요 메뉴"><button data-nav="home" class="nav-btn active">대시보드</button><button data-nav="chapters" class="nav-btn">학습 목차</button><button data-nav="stats" class="nav-btn">내 진도</button></nav>
       <div class="header-actions"><button id="voiceSettings" class="header-icon" aria-label="음성 설정" title="음성 설정">♫</button><button id="userBtn" class="user-pill"><span id="userInitial">나</span><b id="headerName">학습자</b><span class="chevron">⌄</span></button></div>
     </div>
@@ -606,5 +616,18 @@ function attach(){
 attach();if(profileId){renderHeader();goView('home')}else{$('introForm').classList.remove('hidden');$('introResume').classList.add('hidden')}goIntro();
 })();
 </script>
-</body>
+<script>
+/* PWA launcher icons are static; this animation runs only after the website opens. */
+(function(){
+ var isAndroidDevice=/Android/i.test(navigator.userAgent||'');
+ if(!isAndroidDevice)return;
+ document.documentElement.classList.add('android-animated-character');
+ var logo=document.querySelector('.brand-logo-img');
+ if(!logo)return;
+ if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ logo.onerror=function(){this.onerror=null;this.src='./assets/icon-192.png?v=68';};
+ logo.src='./assets/character-wave.gif?v=68';
+ logo.alt='';
+})();
+</script>\n</body>
 </html>
