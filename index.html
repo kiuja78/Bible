@@ -335,7 +335,7 @@ body{overflow-x:hidden;background:#14223e radial-gradient(circle at 18% -10%,rgb
 .genesis-curriculum{display:grid;grid-template-columns:104px 1fr;gap:18px;align-items:center;margin:18px 0 22px;padding:18px;border-radius:20px;background:#241f42;border:1px solid #644d81;color:#fff}.genesis-curriculum-visual{height:95px;border-radius:13px;overflow:hidden}.genesis-curriculum img{width:100%;height:100%;object-fit:cover}.genesis-curriculum span{color:#f0d08c;font-weight:800;letter-spacing:1.5px;font-size:11px}.genesis-curriculum h3{margin:5px 0 6px;color:#fff;font-size:18px;line-height:1.45}.genesis-curriculum p{margin:0;color:#d4cde0;font-size:12px;line-height:1.65;word-break:keep-all}.level-progress-line{font-size:10px;display:block;margin-top:9px;letter-spacing:0;color:#8b7a9f;font-weight:700}.chapter-tile.enriched-chapter{border-color:#c3a66b;box-shadow:0 3px 14px rgba(203,156,60,.13)}.chapter-tile.enriched-chapter:before{content:'EXPANDED';position:absolute;top:10px;right:12px;font-size:9px;letter-spacing:.7px;font-weight:900;color:#b48a44}.level-modal-card{width:min(560px,calc(100vw - 26px));max-height:min(92dvh,800px);overflow:auto;background:#fbf7ef;border:1px solid #dec9a5;border-radius:24px;padding:20px 20px 18px;box-shadow:0 22px 65px rgba(0,0,0,.35)}.level-modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:9px}.level-eyebrow{font-size:11px;font-weight:900;color:#7654a0;letter-spacing:2px}.level-close{border:0;background:#ede5f0;width:35px;height:35px;border-radius:50%;font-size:22px;color:#664678}.level-hero{display:grid;grid-template-columns:102px 1fr;gap:15px;align-items:center;margin:4px 0 20px}.level-hero img{width:102px;height:94px;object-fit:cover;border-radius:14px}.level-hero h2{font-size:20px;color:#352443;margin:0 0 7px;letter-spacing:-.9px}.level-hero p{font-size:12px;color:#75697d;margin:0;line-height:1.6}.level-choice-list{display:grid;gap:11px}.level-choice{border-radius:16px;border:1px solid #e4d9e4;display:flex;gap:12px;align-items:center;text-align:left;background:#fffdf9;color:#32243f;padding:15px;cursor:pointer;transition:transform .12s,border-color .12s}.level-choice:not(:disabled):hover{border-color:#b18acc;background:#fff}.level-choice:not(:disabled):active{transform:scale(.99)}.level-choice:disabled{cursor:not-allowed;opacity:.58}.level-ico{width:43px;height:43px;flex:0 0 43px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(145deg,#9668b1,#6f4c8d);color:#fff1c7;font-size:22px}.level-copy{display:flex;flex-direction:column;gap:4px;flex:1;min-width:0}.level-copy strong{font-size:15px}.level-copy small{font-size:11px;color:#80728d;line-height:1.5}.level-count{text-align:right;color:#745492;font-size:12px;font-weight:900;white-space:nowrap}.level-count em{display:block;font-size:10px;font-style:normal;color:#23866a;margin-top:6px}.level-tip{margin:14px 3px 0;color:#877b8c;font-size:11px;line-height:1.5}.story-figure img{object-fit:cover}.story-figure figcaption{font-size:11px}
 @media(max-width:580px){.genesis-curriculum{grid-template-columns:82px 1fr;gap:12px;padding:12px;margin:12px 0 15px}.genesis-curriculum-visual{height:86px}.genesis-curriculum h3{font-size:14px}.genesis-curriculum p{font-size:10px}.level-modal-card{padding:15px}.level-hero{grid-template-columns:82px 1fr;gap:11px}.level-hero img{height:84px;width:82px}.level-hero h2{font-size:17px}.level-choice{padding:13px 12px}.level-copy strong{font-size:14px}.level-count{font-size:11px}.level-ico{width:39px;height:39px;flex-basis:39px}}
 
-/* V7.1 faithful three-column learning layout, based on the user-approved mockups */
+/* V7.2 faithful three-column learning layout, based on the user-approved mockups */
 body.study-open-v71{background:#f6f2ff}
 body.study-open-v71 .site-header,body.study-open-v71 .site-footer{display:none!important}
 body.study-open-v71 .content{width:100%;max-width:none;margin:0;padding:0;min-height:100vh}
@@ -370,6 +370,17 @@ body.study-open-v71 .study-v71{width:100%;margin:0;color:#2d2448;font-family:-ap
 .study-question-card-v71 .audio-row .audio-sub{background:#fff!important;color:#705589!important;border:1px solid #e4d8ef!important}
 @media(max-width:900px){.study-quiz-top-v71{background:#f7f2ff;border-radius:11px;padding:6px 7px!important;color:#5c358b!important;gap:5px}.study-quiz-top-v71 .quiet-btn{color:#5f3d8b!important;background:#fff!important;border:1px solid #e5d4f2!important;border-radius:8px!important;padding:6px 8px!important}.study-quiz-top-v71 .quiz-title{color:#4b2c70!important;opacity:1;font-weight:800}.study-explain-v71.study-is-empty{display:none!important}}
 @media(prefers-reduced-motion:reduce){.study-v71 *{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* V7.2: consistent three-column learning and prominent working speech controls */
+.study-voice-panel-v72{display:grid!important;grid-template-columns:minmax(140px,1.4fr) minmax(105px,1fr) auto;align-items:center;gap:7px;margin:12px 0 14px!important;padding:10px 11px!important;border-radius:14px;background:#f2ecfb!important;border:1px solid #dfcef4!important;order:2!important}
+.study-voice-panel-v72 button{min-height:43px!important;padding:10px 12px!important;border-radius:10px!important;font-weight:800!important;line-height:1.25}
+.study-voice-panel-v72 .audio-primary{background:linear-gradient(145deg,#8654c0,#6733a3)!important;color:#fff!important;border:1px solid #7440aa!important;box-shadow:0 3px 8px #6b378a24!important}
+.study-voice-panel-v72 .audio-sub{background:#fff!important;color:#5e3785!important;border:1px solid #d7c3eb!important}
+.study-voice-panel-v72 #audioStatus{grid-column:1/-1;display:block;min-height:15px;font-size:11px;color:#684884!important;font-weight:650;line-height:1.5;padding:0 3px}
+.study-question-card-v71 .story-figure{order:3!important}.study-question-card-v71 .answer-choices{order:4!important}.study-question-card-v71 .quiz-card-bottom{order:5!important}
+.study-question-card-v71 .audio-row button:focus-visible{outline:3px solid #8b5eb8;outline-offset:2px}
+@media (min-width:901px){.study-body-v71{grid-template-columns:clamp(165px,16%,224px) minmax(0,1fr)}.study-two-column-v71{grid-template-columns:minmax(0,1.14fr) minmax(265px,.85fr)}.study-chapter-aside-v71{min-width:0}.study-explain-v71{min-width:0}}
+@media (max-width:600px){.study-voice-panel-v72{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:7px;padding:9px!important}.study-voice-panel-v72 #audioPlay{grid-column:1/-1;grid-row:1;font-size:15px!important;min-height:48px!important}.study-voice-panel-v72 #audioAgain{grid-column:1;grid-row:2}.study-voice-panel-v72 #audioStop{grid-column:2;grid-row:2}.study-voice-panel-v72 #audioStatus{grid-column:1/-1;grid-row:3;align-self:center;padding:2px 3px 0!important;font-size:11px!important}.study-voice-panel-v72 button{font-size:12px!important;padding:8px 5px!important;min-height:42px!important}.study-explain-v71{margin-top:8px}}
 </style>
 </head>
 <body>
@@ -449,9 +460,9 @@ body.study-open-v71 .study-v71{width:100%;margin:0;color:#2d2448;font-family:-ap
            <article class="question-card study-question-card-v71">
              <div class="question-kicker"><span>✦ 말씀 속 이야기</span><span class="attempt-chip" id="attemptChip">기회 2회</span></div>
              <div class="question-main"><span class="q-monogram" aria-hidden="true">Q.</span><h1 id="questionText">문제를 불러오는 중입니다.</h1></div>
+             <div class="audio-row study-voice-panel-v72" role="group" aria-label="문제 음성 듣기"><button type="button" id="audioPlay" class="audio-primary" aria-label="문제와 보기 읽기">🔊 문제와 보기 듣기</button><button type="button" id="audioAgain" class="audio-sub">문제만 듣기</button><button type="button" id="audioStop" class="audio-sub">■ 중지</button><span id="audioStatus" class="audio-status" role="status" aria-live="polite">듣기 버튼을 눌러주세요.</span></div>
              <figure class="story-figure" id="storyFigure"><img id="storyImage" alt="성경 학습 일러스트" decoding="async"/><figcaption id="storyCaption">내용을 이해하기 위한 일러스트</figcaption></figure>
              <div class="answer-choices" id="answerChoices"></div>
-             <div class="audio-row"><button id="audioPlay" class="audio-primary">▶ 문제와 보기 듣기</button><button id="audioAgain" class="audio-sub">문제만 듣기</button><button id="audioStop" class="audio-sub">■ 중지</button><span id="audioStatus" class="audio-status">음성 안내</span></div>
              <div class="quiz-card-bottom"><span id="quizHint">알맞은 답 하나를 선택해 주세요.</span><button id="nextQuestion" class="btn btn-dark hidden">다음 문제 →</button></div>
            </article>
            <aside class="study-explain-v71" aria-live="polite">
@@ -683,7 +694,7 @@ function renderQuestion(isNew){const q=currentQuestion();if(!q){alert('해당 �
  $('attemptChip').textContent=quiz.finished?'답 확인 완료':`기회 ${2-quiz.tries}회`;$('answerFeedback').className='feedback-panel hidden';$('answerFeedback').innerHTML='';$('nextQuestion').classList.toggle('hidden',!quiz.finished);$('nextQuestion').textContent=quiz.index===quiz.items.length-1?'학습 결과 보기 →':'다음 문제 →';
  renderOptions();if(quiz.finished){const result=quiz.grade===0?'reveal':'good';renderFeedback(result,quiz.grade===0?'정답을 확인해 보세요':quiz.grade===2?'정답입니다!':'재도전 성공!')}
  $('quizHint').textContent=quiz.finished?'성경 근거와 해설을 확인해 보세요.':'알맞은 답 하나를 선택해주세요.';$('quizCorrectLabel').textContent=`정답 ${quiz.results.filter(x=>x.grade>0).length+(quiz.finished&&quiz.grade>0?1:0)}개`;updateStudyNav();saveCurrent();
- if(canSpeak&&db.settings.auto&&isNew){setTimeout(()=>speakQuestion(db.settings.options),160)}else $('audioStatus').textContent=canSpeak?'듣기를 눌러 문제를 들을 수 있어요.':'이 브라우저에서는 음성이 지원되지 않아요.';
+ if(canSpeak&&db.settings.auto&&isNew&&speechIsActivated){setTimeout(()=>speakQuestion(db.settings.options,false),220)}else setSpeechStatus(canSpeak?'🔊 듣기 버튼을 누르면 문제가 재생돼요.':'이 브라우저에서는 음성이 지원되지 않아요.');
 }
 function renderOptions(){const q=currentQuestion(),out=$('answerChoices');out.innerHTML='';quiz.options.forEach((val,i)=>{const btn=document.createElement('button');btn.type='button';btn.className='choice';const bad=quiz.wrongOptions.includes(val),good=quiz.finished&&val===q.right;
  if(good)btn.classList.add('correct');if(bad)btn.classList.add('wrong');btn.disabled=quiz.finished||bad;
@@ -711,7 +722,7 @@ function chooseAnswer(answer){if(!quiz||quiz.finished)return;const q=currentQues
  else{quiz.tries++;quiz.wrongOptions.push(answer);if(quiz.tries===1)renderFeedback('retry','',answer);else{quiz.finished=true;quiz.grade=0;renderFeedback('reveal','')}}
  $('attemptChip').textContent=quiz.finished?'답 확인 완료':`기회 ${2-quiz.tries}회`;renderOptions();$('quizHint').textContent=quiz.finished?'관련 말씀의 뜻을 함께 확인하세요.':'한 번 더 선택할 수 있어요.';$('nextQuestion').classList.toggle('hidden',!quiz.finished);updateStudyNav();$('quizCorrectLabel').textContent=`정답 ${quiz.results.filter(x=>x.grade>0).length+(quiz.finished&&quiz.grade>0?1:0)}개`;
  if(quiz.finished){$('quizProgressFill').style.width=(((quiz.index+1)/quiz.items.length)*100)+'%';setTimeout(()=>{if(quiz?.finished&&view==='quiz')($('answerFeedback').querySelector('.answer-next-action')||$('answerFeedback')).scrollIntoView({behavior:'smooth',block:'center'});},70)}saveCurrent()}
-function nextQuestion(){if(!quiz?.finished)return;quiz.results.push({id:currentQuestion().id,grade:quiz.grade});if(quiz.index+1<quiz.items.length){quiz.index++;quiz.options=null;renderQuestion(true);document.querySelector('.study-lesson-heading-v71')?.scrollIntoView({behavior:'smooth',block:'start'})}
+function nextQuestion(){if(!quiz?.finished)return;stopVoice(false);quiz.results.push({id:currentQuestion().id,grade:quiz.grade});if(quiz.index+1<quiz.items.length){quiz.index++;quiz.options=null;renderQuestion(true);document.querySelector('.study-lesson-heading-v71')?.scrollIntoView({behavior:'smooth',block:'start'})}
  else finishSession()}
 function finishSession(){const p=person(),results=quiz.results;const sum=results.filter(r=>r.grade>0).length;const toReview=new Set(p.wrongIds||[]);results.forEach(r=>r.grade===2?toReview.delete(r.id):toReview.add(r.id));p.wrongIds=Array.from(toReview);p.attempted=(p.attempted||0)+results.length;
  if(quiz.mode==='chapter'){if(quiz.book==='창세기'&&quiz.level){const lkey=levelKey(quiz.book,quiz.chapter,quiz.level);p.levelDone=p.levelDone||{};p.levelDone[lkey]={done:true,max:quiz.items.length,latest:sum,updated:new Date().toISOString()};if(p.levelSessions)delete p.levelSessions[lkey];}const key=chapterKey(quiz.book,quiz.chapter);const prev=p.chapters[key]||{};p.chapters[key]={done:true,best:Math.max(sum,prev.best||0),max:quiz.items.length,latest:sum,updated:new Date().toISOString()}}
@@ -726,14 +737,77 @@ function renderStats(){const gen=totalCompleted('창세기'),act=totalCompleted(
  $('statsReview').disabled=!(person()?.wrongIds?.length);const out=$('roadmap');out.innerHTML='';for(const [b,len] of Object.entries(BOOK_LENGTH)){const group=document.createElement('div');group.className='roadmap-section';group.innerHTML=`<div class="roadmap-heading"><span>${b}</span><small>${totalCompleted(b)} / ${len}장 완료</small></div>`;const grid=document.createElement('div');grid.className='roadmap-grid';for(let c=1;c<=len;c++){const status=chStatus(b,c),btn=document.createElement('button');btn.type='button';btn.className='roadmap-dot '+status;btn.textContent=c;btn.title=`${b} ${c}장 ${DATA.TOPICS[b][c-1]} · ${status==='done'?'완료':status==='progress'?'진행 중':status==='legacy'?'이전 버전 완료':'미시작'}`;btn.addEventListener('click',()=>startChapter(b,c));grid.appendChild(btn)}group.appendChild(grid);out.appendChild(group)}}
 function openSettings(){loadVoices();$('ttsVoice').value=db.settings.voice||'';$('ttsRate').value=db.settings.rate;$('ttsPitch').value=db.settings.pitch;$('rateValue').textContent=Number(db.settings.rate).toFixed(2)+'배';$('pitchValue').textContent=Number(db.settings.pitch).toFixed(2);$('ttsAuto').checked=!!db.settings.auto;$('ttsOptions').checked=!!db.settings.options;$('settingsModal').classList.remove('hidden');$('voiceHelp').textContent=canSpeak?'아이폰에서는 음성 재생을 위해 처음에 듣기 버튼을 눌러야 할 수 있어요.':'현재 브라우저는 음성 읽기를 지원하지 않아요.'}
 function closeSettings(){stopVoice();$('settingsModal').classList.add('hidden')}
-function loadVoices(){if(!canSpeak)return;try{voiceList=window.speechSynthesis.getVoices()||[]}catch(_){voiceList=[]}const select=$('ttsVoice'),old=select.value||db.settings.voice;select.innerHTML='<option value="">기본 한국어 목소리 (기기 설정)</option>';const ko=voiceList.filter(v=>/^ko\b|korean/i.test(v.lang)||/korean|한국/i.test(v.name));ko.sort((a,b)=>{const score=v=>(/premium|enhanced|natural|neural|고품질|향상/i.test(v.name)?4:0)+(v.localService?2:0)+(v.default?1:0);return score(b)-score(a)});ko.forEach(v=>{const opt=document.createElement('option');opt.value=v.voiceURI;opt.textContent=`${v.name} · ${v.lang}${v.localService?' (기기 내장)':''}`;select.appendChild(opt)});if(ko.some(v=>v.voiceURI===old))select.value=old;else select.value='';if(!ko.length)select.options[0].textContent='한국어 음성 목록을 불러오는 중 또는 기기 기본 음성'}
-function stopVoice(){speechSeq++;if(canSpeak)try{window.speechSynthesis.cancel()}catch(_){};$('audioStatus').textContent='음성 중지'}
-function speakText(text,fromSettings=false){if(!canSpeak){alert('현재 브라우저에서는 음성 재생을 지원하지 않습니다. Safari나 Chrome을 사용해 주세요.');return}speechSeq++;const seq=speechSeq;try{window.speechSynthesis.cancel()}catch(_){};const source=fromSettings?{voice:$('ttsVoice').value,rate:Number($('ttsRate').value),pitch:Number($('ttsPitch').value)}:db.settings;
- const u=new SpeechSynthesisUtterance(text);u.lang='ko-KR';u.rate=Number(source.rate)||.95;u.pitch=Number(source.pitch)||1;const match=voiceList.find(v=>v.voiceURI===source.voice)||voiceList.find(v=>v.lang.toLowerCase()==='ko-kr');if(match)u.voice=match;
- u.onstart=()=>{if(seq!==speechSeq)return;$('audioStatus').textContent='♫ 음성 읽는 중'};u.onend=()=>{if(seq!==speechSeq)return;$('audioStatus').textContent='음성 읽기 완료'};u.onerror=()=>{if(seq!==speechSeq)return;$('audioStatus').textContent='음성이 재생되지 않으면 다른 목소리를 선택해 주세요.'};
- try{window.speechSynthesis.speak(u);$('audioStatus').textContent='음성 준비 중'}catch(e){$('audioStatus').textContent='음성을 시작하지 못했어요.'}}
-function speakQuestion(options=true){if(!quiz)return;const q=currentQuestion();if(!q)return;let msg=`${q.book} ${q.chapter}장. ${quiz.index+1}번 문제. ${q.text}`;if(options){quiz.options.forEach((a,i)=>{msg+=` ${i+1}번. ${a}.`})}speakText(msg)}
-function speakSummary(){if(!quiz||quiz.mode!=='chapter')return;const v=DATA.SUMMARIES[quiz.book][String(quiz.chapter)];speakText(`${quiz.book} ${quiz.chapter}장 핵심 정리. ${v.summary} 기억할 말씀의 핵심. ${v.lesson} 생각해 볼 질문. ${v.reflection}`)}
+function setSpeechStatus(message){const target=$('audioStatus');if(target)target.textContent=message;const help=$('voiceHelp');if(help&&(!$('settingsModal')?.classList.contains('hidden')))help.textContent=message;}
+let speechActiveToken=0,speechIsActivated=false,speechStartTimer=null,speechNextTimer=null,speechCurrent=null;
+function loadVoices(){
+ if(!canSpeak)return;
+ let fresh=[];
+ try{fresh=window.speechSynthesis.getVoices()||[]}catch(_){}
+ if(fresh.length)voiceList=fresh;
+ const select=$('ttsVoice');if(!select)return;
+ const current=select.value||db.settings.voice||'';
+ select.innerHTML='<option value="">기기 기본 한국어 목소리</option>';
+ const ko=voiceList.filter(v=>/^(ko|kor)(-|_|$)/i.test(v.lang||'')||/korean|한국|지우|수진|민준|유나/i.test(v.name||''));
+ ko.sort((a,b)=>{const rank=v=>(/premium|enhanced|natural|neural|고품질|향상/i.test(v.name)?5:0)+(v.localService?2:0)+(v.default?1:0);return rank(b)-rank(a)});
+ ko.forEach(v=>{const option=document.createElement('option');option.value=v.voiceURI;option.textContent=`${v.name} · ${v.lang||'한국어'}`;select.appendChild(option)});
+ select.value=ko.some(v=>v.voiceURI===current)?current:'';
+ if(!ko.length)select.options[0].textContent='기기 기본 음성 (한국어 음성 목록 확인 중)';
+}
+function stopVoice(showStatus=true){
+ speechSeq++;speechActiveToken=speechSeq;
+ if(speechStartTimer){clearTimeout(speechStartTimer);speechStartTimer=null}
+ if(speechNextTimer){clearTimeout(speechNextTimer);speechNextTimer=null}
+ speechCurrent=null;
+ if(canSpeak){try{const engine=window.speechSynthesis;if(engine.speaking||engine.pending||engine.paused)engine.cancel()}catch(_){}}
+ if(showStatus)setSpeechStatus('음성을 중지했어요.');
+}
+function speechChunks(raw){
+ const value=String(raw||'').replace(/\s+/g,' ').trim();
+ if(!value)return[];
+ const sentences=value.match(/[^.!?。！？]+[.!?。！？]?/g)||[value];
+ const parts=[];
+ for(let sentence of sentences){sentence=sentence.trim();while(sentence.length>110){let cut=sentence.lastIndexOf(' ',110);if(cut<40)cut=110;parts.push(sentence.slice(0,cut).trim());sentence=sentence.slice(cut).trim()}if(sentence)parts.push(sentence)}
+ return parts;
+}
+function speakText(text,fromSettings=false,isManual=false){
+ if(!canSpeak){setSpeechStatus('음성 기능이 없는 브라우저입니다. Safari 또는 Chrome에서 열어 주세요.');return}
+ if(isManual)speechIsActivated=true;
+ const engine=window.speechSynthesis;
+ // In iOS Safari, cancelling an idle synthesis engine just before the first utterance
+ // can swallow the subsequent speak(). Cancel only an active utterance.
+ stopVoice(false);
+ const token=++speechSeq;speechActiveToken=token;
+ if(!voiceList.length)loadVoices();
+ let source=fromSettings?{voice:$('ttsVoice').value,rate:Number($('ttsRate').value),pitch:Number($('ttsPitch').value)}:db.settings;
+ const segments=speechChunks(text);if(!segments.length)return;
+ const preferred=voiceList.find(v=>v.voiceURI===source.voice) ||
+   voiceList.find(v=>/^(ko|kor)(-|_|$)/i.test(v.lang||'')) || null;
+ let nextIndex=0,started=false;
+ const readNext=()=>{
+  if(token!==speechActiveToken)return;
+  if(nextIndex>=segments.length){speechCurrent=null;setSpeechStatus('✓ 음성 읽기 완료');return}
+  const utterance=new SpeechSynthesisUtterance(segments[nextIndex++]);
+  utterance.lang='ko-KR';utterance.rate=Math.min(1.35,Math.max(.65,Number(source.rate)||.95));utterance.pitch=Math.min(1.4,Math.max(.7,Number(source.pitch)||1));utterance.volume=1;
+  if(preferred){try{utterance.voice=preferred}catch(_){/* use device default Korean voice */}}
+  speechCurrent=utterance;
+  utterance.onstart=()=>{if(token!==speechActiveToken)return;started=true;if(speechStartTimer)clearTimeout(speechStartTimer);setSpeechStatus('🔊 말씀을 읽고 있어요…')};
+  utterance.onend=()=>{if(token!==speechActiveToken)return;speechNextTimer=setTimeout(readNext,65)};
+  utterance.onerror=(ev)=>{if(token!==speechActiveToken)return;
+   if(ev.error==='interrupted'||ev.error==='canceled')return;
+   setSpeechStatus('음성 시작 실패 — 기기 한국어 음성 및 미디어 볼륨을 확인해 주세요.');
+  };
+  try{engine.speak(utterance);if(engine.paused)engine.resume();setSpeechStatus('🔊 음성 재생 준비 중…')}
+  catch(_){setSpeechStatus('음성을 시작하지 못했어요. 다른 목소리를 선택해 주세요.');return}
+  if(nextIndex===1){speechStartTimer=setTimeout(()=>{
+    if(token!==speechActiveToken||started)return;
+    try{if(engine.paused)engine.resume()}catch(_){}
+    setSpeechStatus('음성이 들리지 않으면 기기 미디어 볼륨을 확인하고 ‘문제만 듣기’를 눌러주세요.');
+   },3000)}
+ };
+ readNext(); // Keep the first speak() synchronous with a user's tap on iOS/Android.
+}
+function speakQuestion(options=true,manual=false){if(!quiz)return;const q=currentQuestion();if(!q)return;let msg=`${q.book} ${q.chapter}장. ${quiz.index+1}번 문제. ${q.text}`;if(options){quiz.options.forEach((a,i)=>{msg+=` ${i+1}번. ${a}.`})}speakText(msg,false,manual)}
+function speakSummary(manual=true){if(!quiz||quiz.mode!=='chapter')return;const v=DATA.SUMMARIES[quiz.book][String(quiz.chapter)];speakText(`${quiz.book} ${quiz.chapter}장 핵심 정리. ${v.summary} 기억할 말씀의 핵심. ${v.lesson} 생각해 볼 질문. ${v.reflection}`,false,manual)}
 function attach(){
  $('enterApp').addEventListener('click',()=>setName($('introName').value));$('introName').addEventListener('keydown',e=>{if(e.key==='Enter')setName(e.target.value)});
  $('continueApp').addEventListener('click',()=>{$('introScreen').classList.add('hidden');goView('home')});$('changeIntroUser').addEventListener('click',()=>{$('introResume').classList.add('hidden');$('introForm').classList.remove('hidden');$('introName').value='';$('introName').focus()});
@@ -746,32 +820,80 @@ function attach(){
  if(action==='toggle-verse'){$('verseEditor')?.classList.remove('hidden');$('verseTextarea')?.focus()}
  else if(action==='close-verse'){$('verseEditor')?.classList.add('hidden')}
  else if(action==='save-verse'){setVerseText(q,$('verseTextarea').value);renderFeedback(quiz.grade===0?'reveal':'good',quiz.grade===2?'첫 번째에 정답!':'두 번째에 정답!')}
- else if(action==='read-explanation'){speakText(`${q.book} ${q.ref}. 정답은 ${q.right}. ${passageParaphrase(q)}`)}
+ else if(action==='read-explanation'){speakText(`${q.book} ${q.ref}. 정답은 ${q.right}. ${passageParaphrase(q)}`,false,true)}
  else if(action==='copy-reference'){const value=q.book+' '+q.ref;try{await navigator.clipboard.writeText(value);e.target.textContent='✓ 복사 완료'}catch(_){window.prompt('장절을 복사해 주세요.',value)}}
 });
- $('closeLevel').addEventListener('click',closeGenesisLevel);$('levelModal').addEventListener('click',e=>{if(e.target===e.currentTarget)closeGenesisLevel()});$('quizBack').addEventListener('click',()=>{saveCurrent();goView('chapters')});$('nextQuestion').addEventListener('click',nextQuestion);$('audioPlay').addEventListener('click',()=>speakQuestion(true));$('audioAgain').addEventListener('click',()=>speakQuestion(false));$('audioStop').addEventListener('click',stopVoice);
+ $('closeLevel').addEventListener('click',closeGenesisLevel);$('levelModal').addEventListener('click',e=>{if(e.target===e.currentTarget)closeGenesisLevel()});$('quizBack').addEventListener('click',()=>{saveCurrent();goView('chapters')});$('nextQuestion').addEventListener('click',nextQuestion);$('audioPlay').addEventListener('click',()=>speakQuestion(true,true));$('audioAgain').addEventListener('click',()=>speakQuestion(false,true));$('audioStop').addEventListener('click',stopVoice);
  $('resultToToc').addEventListener('click',()=>goView('chapters'));$('nextChapterBtn').addEventListener('click',nextChapter);$('retryChapterBtn').addEventListener('click',retrySession);$('summaryListen').addEventListener('click',speakSummary);
  $('statsToc').addEventListener('click',()=>goView('chapters'));$('statsReview').addEventListener('click',startReview);
- $('voiceSettings').addEventListener('click',openSettings);$('quizSettings').addEventListener('click',openSettings);$('closeSettings').addEventListener('click',closeSettings);$('settingsModal').addEventListener('click',e=>{if(e.target===e.currentTarget)closeSettings()});$('ttsRate').addEventListener('input',e=>$('rateValue').textContent=Number(e.target.value).toFixed(2)+'배');$('ttsPitch').addEventListener('input',e=>$('pitchValue').textContent=Number(e.target.value).toFixed(2));$('testVoice').addEventListener('click',()=>{loadVoices();speakText('안녕하세요. 오늘도 말씀과 함께하는 소중한 시간입니다. 조금씩 천천히 함께 공부해 보아요.',true)});
+ $('voiceSettings').addEventListener('click',openSettings);$('quizSettings').addEventListener('click',openSettings);$('closeSettings').addEventListener('click',closeSettings);$('settingsModal').addEventListener('click',e=>{if(e.target===e.currentTarget)closeSettings()});$('ttsRate').addEventListener('input',e=>$('rateValue').textContent=Number(e.target.value).toFixed(2)+'배');$('ttsPitch').addEventListener('input',e=>$('pitchValue').textContent=Number(e.target.value).toFixed(2));$('testVoice').addEventListener('click',()=>{loadVoices();speakText('안녕하세요. 오늘도 말씀과 함께하는 소중한 시간입니다. 조금씩 천천히 함께 공부해 보아요.',true,true)});
  $('saveSettings').addEventListener('click',()=>{db.settings={voice:$('ttsVoice').value,rate:Number($('ttsRate').value),pitch:Number($('ttsPitch').value),auto:$('ttsAuto').checked,options:$('ttsOptions').checked};persist();closeSettings()});
  $('userBtn').addEventListener('click',()=>{$('userNameInput').value=personName();$('userModal').classList.remove('hidden')});$('closeUser').addEventListener('click',()=>$('userModal').classList.add('hidden'));$('userModal').addEventListener('click',e=>{if(e.target===e.currentTarget)$('userModal').classList.add('hidden')});$('saveUser').addEventListener('click',()=>{const n=$('userNameInput').value.trim();if(!n){alert('이름을 입력해주세요.');return}person().name=n;persist();$('userModal').classList.add('hidden');renderHeader();if(view==='home')renderHome()});$('backWelcome').addEventListener('click',()=>{$('userModal').classList.add('hidden');goIntro()});
  document.addEventListener('keydown',e=>{if(e.key==='Escape'){$('settingsModal').classList.add('hidden');$('userModal').classList.add('hidden');stopVoice();return}if(view!=='quiz'||!$('settingsModal').classList.contains('hidden')||!$('userModal').classList.contains('hidden'))return;if(['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName))return;if(/^[1-4]$/.test(e.key)&&quiz&&!quiz.finished){const v=quiz.options[Number(e.key)-1];if(v)chooseAnswer(v)}else if(e.key==='Enter'&&quiz?.finished)nextQuestion()});
  if(canSpeak){loadVoices();window.speechSynthesis.onvoiceschanged=loadVoices}
 }
 
-/* V7.1 interactive learning chrome */
+/* V7.2 interactive learning chrome */
 function studyNav(action){if(action==='review'){startReview();return;}if(action==='settings'){$('voiceSettings').click();return;}goView(action)}
-function buildStudyChapters(){if(!quiz)return;const b=quiz.book||'창세기',c=quiz.chapter||1,len=BOOK_LENGTH[b];const out=$('studyChapterList');out.innerHTML='';$('studyChapterCount').textContent=len+'장';for(let i=1;i<=len;i++){const btn=document.createElement('button');btn.type='button';btn.className='study-chapter-item-v71'+(i===c?' active':'')+(chStatus(b,i)==='done'?' done':'');btn.innerHTML='<strong>'+i+'장</strong><span class="chapter-short">'+escapeHTML(DATA.TOPICS[b][i-1]||'성경 학습')+'</span><span class="chapter-status">'+(chStatus(b,i)==='done'?'✓':i===c?'●':'›')+'</span>';btn.addEventListener('click',()=>startChapter(b,i));out.appendChild(btn)}const active=out.querySelector('.active');if(active)active.scrollIntoView({block:'nearest',inline:'center'})}
-function renderStudyChrome(){if(!quiz)return;const b=quiz.book||'창세기',c=quiz.chapter||1;const study=quiz.mode==='chapter';const topic=DATA.TOPICS[b]?.[c-1]||'말씀 공부';$('studyBannerBook').innerHTML=b+' <small>'+(b==='창세기'?'GENESIS':'ACTS')+'</small>';$('studyBannerTopic').textContent=topic;$('studyBannerChapter').textContent=study?c+'장':'';$('studyBannerDesc').textContent=study?'말씀을 읽고, 생각하고, 오래 기억하는 학습':'문제와 함께 성경을 다시 공부해요';$('studyBookBtn').innerHTML=b+' <span>⌄</span>';$('studyChapterBtn').innerHTML=(study?c+'장 · '+escapeHTML(topic):'장별 학습')+' <span>⌄</span>';$('studyLessonTitle').textContent=modeTitle();$('studyLearnBadge').textContent=study&&b==='창세기'&&c>3?'기존 문항 · 확장 준비 중':study?'성경 본문 이해':'오답과 복습';const tabs=$('studyLevels');tabs.innerHTML='';if(study&&b==='창세기'){for(const m of GENESIS_STUDY_LEVELS){const ids=genesisTrackIds(c,m.id);const button=document.createElement('button');button.type='button';button.className='study-level-btn-v71'+(m.id===quiz.level?' active':'');button.disabled=!ids.length;button.innerHTML='<span aria-hidden="true">'+(m.id==='core'?'◎':m.id==='general'?'▤':'✧')+'</span><span><strong>'+m.title+'</strong><small>'+(ids.length?ids.length+'문제':'준비 중')+'</small></span>';button.addEventListener('click',()=>startGenesisTrack(c,m.id));tabs.appendChild(button)}}else{tabs.innerHTML='<span class="study-level-help-v71">'+(study?'성경 장별 학습':'맞춤 복습 모드')+'</span>'}buildStudyChapters();const banner=$('quizView').querySelector('.study-banner-v71');banner.style.backgroundImage=b==='창세기'?'linear-gradient(90deg,#fff9f1 0%,#fffbf6 35%,#ffffffe3 53%,transparent 77%),url("assets/design/genesis-banner.webp")':'linear-gradient(90deg,#fff9f1,#fffbf6c5 57%,transparent),url("assets/design/genesis-banner.webp")';}
+function studyContext(){
+ const q=currentQuestion();
+ return {book:q?.book||quiz?.book||'창세기',chapter:q?.chapter||quiz?.chapter||1,study:quiz?.mode==='chapter'};
+}
+function buildStudyChapters(){
+ if(!quiz)return;
+ const {book:b,chapter:c}=studyContext(),len=BOOK_LENGTH[b],out=$('studyChapterList');
+ out.innerHTML='';$('studyChapterCount').textContent=len+'장';
+ for(let i=1;i<=len;i++){
+  const btn=document.createElement('button');btn.type='button';
+  btn.className='study-chapter-item-v71'+(i===c?' active':'')+(chStatus(b,i)==='done'?' done':'');
+  btn.innerHTML='<strong>'+i+'장</strong><span class="chapter-short">'+escapeHTML(DATA.TOPICS[b][i-1]||'성경 학습')+'</span><span class="chapter-status">'+(chStatus(b,i)==='done'?'✓':i===c?'●':'›')+'</span>';
+  btn.addEventListener('click',()=>startChapter(b,i));out.appendChild(btn);
+ }
+ const active=out.querySelector('.active');if(active)active.scrollIntoView({block:'nearest',inline:'nearest'});
+}
+function renderStudyChrome(){
+ if(!quiz)return;
+ const {book:b,chapter:c,study}=studyContext();
+ const topic=DATA.TOPICS[b]?.[c-1]||'말씀 공부';
+ $('studyBannerBook').innerHTML=b+' <small>'+(b==='창세기'?'GENESIS':'ACTS')+'</small>';
+ $('studyBannerTopic').textContent=study?topic:(quiz.mode==='review'?'오답 복습':'랜덤 퀴즈');
+ $('studyBannerChapter').textContent=c+'장';
+ $('studyBannerDesc').textContent=study?'말씀을 읽고, 생각하고, 오래 기억하는 학습':`${b} ${c}장 · ${topic}`;
+ $('studyBookBtn').innerHTML=b+' <span>⌄</span>';
+ $('studyChapterBtn').innerHTML=c+'장 · '+escapeHTML(topic)+' <span>⌄</span>';
+ $('studyLessonTitle').textContent=study?modeTitle():`${modeTitle()} · ${b} ${c}장`;
+ $('studyLearnBadge').textContent=study&&b==='창세기'&&c>3?'기존 문항 · 확장 준비 중':study?'성경 본문 이해':quiz.mode==='review'?'다시 기억하기':'여러 장에서 학습하기';
+ const tabs=$('studyLevels');tabs.innerHTML='';
+ if(study&&b==='창세기'){
+  for(const m of GENESIS_STUDY_LEVELS){
+   const ids=genesisTrackIds(c,m.id),button=document.createElement('button');button.type='button';
+   button.className='study-level-btn-v71'+(m.id===quiz.level?' active':'');button.disabled=!ids.length;
+   button.innerHTML='<span aria-hidden="true">'+(m.id==='core'?'◎':m.id==='general'?'▤':'✧')+'</span><span><strong>'+m.title+'</strong><small>'+(ids.length?ids.length+'문제':'준비 중')+'</small></span>';
+   button.addEventListener('click',()=>startGenesisTrack(c,m.id));tabs.appendChild(button);
+  }
+ }else{
+  tabs.innerHTML='<span class="study-level-help-v71">'+(study?'사도행전 · 장별 학습':quiz.mode==='review'?'내 오답 다시 풀기':'전체 문제 중 랜덤 학습')+'</span>';
+ }
+ buildStudyChapters();
+ const banner=$('quizView').querySelector('.study-banner-v71');
+ if(b==='창세기'){
+   banner.style.backgroundImage='linear-gradient(90deg,#fff9f1 0%,#fffbf6 35%,#ffffffe3 53%,transparent 77%),url("assets/design/genesis-banner.webp")';
+   banner.style.backgroundSize='cover,auto 100%';
+ }else{
+   banner.style.backgroundImage='linear-gradient(90deg,#fff9f1 0%,#fffbf6 34%,rgba(255,255,255,.77) 55%,rgba(255,255,255,.09) 95%),url("assets/design/acts-banner.webp")';
+   banner.style.backgroundSize='cover,auto 100%';
+ }
+}
 function toggleStudyFeedback(show){const empty=$('studyEmpty');if(empty){empty.classList.toggle('hidden',!!show);empty.closest('.study-explain-v71')?.classList.toggle('study-is-empty',!show)}}
 function updateStudyNav(){if(!$('studyNextButton'))return;$('studyNextButton').disabled=!quiz?.finished;$('studyNextButton').textContent=quiz?.index===quiz?.items?.length-1?'학습 결과 보기 →':'다음 문제 →'}
 for(const btn of document.querySelectorAll('[data-study-nav]'))btn.addEventListener('click',()=>studyNav(btn.dataset.studyNav));
-$('studyBookBtn').addEventListener('click',()=>{selectedBook=quiz?.book||'창세기';goView('chapters')});
-$('studyChapterBtn').addEventListener('click',()=>{selectedBook=quiz?.book||'창세기';goView('chapters')});
-$('studyAllChapters').addEventListener('click',()=>{selectedBook=quiz?.book||'창세기';goView('chapters')});
-$('studyReturnToc').addEventListener('click',()=>{selectedBook=quiz?.book||'창세기';goView('chapters')});
+$('studyBookBtn').addEventListener('click',()=>{selectedBook=studyContext().book;goView('chapters')});
+$('studyChapterBtn').addEventListener('click',()=>{selectedBook=studyContext().book;goView('chapters')});
+$('studyAllChapters').addEventListener('click',()=>{selectedBook=studyContext().book;goView('chapters')});
+$('studyReturnToc').addEventListener('click',()=>{selectedBook=studyContext().book;goView('chapters')});
 $('studyNextButton').addEventListener('click',()=>nextQuestion());
 
+document.addEventListener('visibilitychange',()=>{if(document.hidden)stopVoice(false)});
 attach();if(profileId){renderHeader();goView('home')}else{$('introForm').classList.remove('hidden');$('introResume').classList.add('hidden')}goIntro();
 })();
 </script>
